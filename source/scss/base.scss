@@ -1,0 +1,58 @@
+body {
+  min-width: 320px;
+  background-color: $white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth; // Look ma no JS!
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+html,
+body {
+  @supports (-webkit-overflow-scrolling: touch) {
+    cursor: pointer;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+  outline: none;
+}
+
+h1,.h1 {
+
+}
+
+h2, .h2 {
+
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+ul:not([class]), ol:not([class]) {
+
+}
+
+p:not([class]) {
+
+}

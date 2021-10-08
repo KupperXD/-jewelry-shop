@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "gulp start",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,40 @@
   "bugs": {
     "url": "https://github.com/KupperXD/-jewelry-shop/issues"
   },
-  "homepage": "https://github.com/KupperXD/-jewelry-shop#readme"
+  "homepage": "https://github.com/KupperXD/-jewelry-shop#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-constants": "^6.1.4",
+    "babel-plugin-transform-es2015-for-of": "^6.23.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
+    "babel-plugin-transform-es2017-object-entries": "0.0.5",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-svgstore": "^8.0.0",
+    "gulp-uglify-es": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-posthtml": "^3.0.5",
+    "jquery": "^3.6.0",
+    "posthtml-include": "^1.7.2",
+    "sass": "^1.42.1",
+    "select2": "^4.1.0-rc.0",
+    "sweetalert2": "^11.1.7"
+  }
 }

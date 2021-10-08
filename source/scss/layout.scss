@@ -1,0 +1,28 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.all {
+  flex-grow: 1;
+}
+
+.container {
+  width: 1250px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-max) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &--content {
+    @media (max-width: $tablet-max) and (min-width: $tablet-min) {
+      width: 670px;
+      padding: 0 20px;
+    }
+  }
+}
