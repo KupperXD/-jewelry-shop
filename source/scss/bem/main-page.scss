@@ -1,0 +1,25 @@
+.main-page {
+  &__welcome-block {
+    margin: 72px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 52px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 42px 0 0;
+    }
+  }
+
+  &__services {
+    margin: 72px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 36px 0 0;
+    }
+  }
+}

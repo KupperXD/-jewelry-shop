@@ -4,8 +4,98 @@
 </div>
 @@include('components/header.html')
     <div class="all">
-        <main>
-            <h1>ювелирка</h1>
+        <main class="main-page">
+            <div class="start-home main-page__start-home">
+                <div class="container container--content">
+                    <div class="start-home__wrapper">
+                        <div class="start-home__inner">
+                            <h1 class="start-home__title">
+                                Ювелирный Дом<br>
+                                на Фрунзенской
+                            </h1>
+                            <p class="start-home__desc">
+                                Выкуп и продажа ювелирных изделий
+                            </p>
+                            <button class="start-home__button btn" type="button">
+                                Перейти в каталог
+                            </button>
+                            <button class="start-home__button start-home__button--way btn btn--with-icon" type="button">
+                                <img src="img/official/yandex_icon.png" width="20" height="20" alt="">
+                                Проложить маршрут
+                            </button>
+                            <a href="tel:88006002981" class="start-home__button start-home__button--tel btn btn--with-icon" type="button">
+                                <svg>
+                                    <use xlink:href="#ic_tel"></use>
+                                </svg>
+                                Позвоните нам
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-page__welcome-block welcome-block">
+                <div class="container container--content">
+                    <div class="welcome-block__wrapper">
+                        <h2 class="welcome-block__title">
+                            Добро пожаловать в&nbsp;Ювелирный Дом на&nbsp;Фрунзенской!
+                        </h2>
+                        <span class="welcome-block__separator"></span>
+                        <p class="welcome-block__desc">
+                            В&nbsp;нашем офисе, находящимся по&nbsp;адресу &lt;здесь пишем адрес&gt;, мы&nbsp;готовы принять
+                            Вас в&nbsp;удобное время и&nbsp;предложить вам лучшие условия обслуживания.
+                            Мы&nbsp;предлагаем нашим посетителям бесплатную удобную парковку прямо рядом с&nbsp;офисом,
+                            а&nbsp;если&nbsp;Вы не&nbsp;готовы приехать к&nbsp;нам в&nbsp;офис, мы&nbsp;предлагаем услугу
+                            выездной мастерской.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-page__services services">
+                <div class="container container--content">
+                    <div class="services__wrapper">
+                        <a href="#" class="services__item services__item--white-text">
+                            <div class="services__item-content">
+                                <h3 class="services__title">
+                                    Продать
+                                </h3>
+                                <p class="services__desc">
+                                    Часы, ювелирные украшения, сумки,
+                                    бриллианты, драгоценые металлы
+                                </p>
+                            </div>
+                            <img src="img/official/services/services_sell_desktop.png" alt="">
+                        </a>
+                        <a href="#" class="services__item">
+                            <div class="services__item-content">
+                                <h3 class="services__title">
+                                    Купить
+                                </h3>
+                                <p class="services__desc">
+                                    Часы, ювелирные украшения,
+                                    сумки, бриллианты,
+                                    антиквариат
+                                </p>
+                            </div>
+                            <img src="img/official/services/services_buy_desktop.png" alt="">
+                        </a>
+                        <a href="#" class="services__item services__item--big">
+                            <div class="services__item-content">
+                                <h3 class="services__title">
+                                    услуги
+                                </h3>
+                                <p class="services__desc">
+                                    Экспертиза ювелирных украшений
+                                    и бриллиантов
+                                    Аутентификация сумок
+                                    Часовая мастерская
+                                    Выездная оценка
+                                </p>
+                            </div>
+                            <img src="img/official/services/services_service_desktop.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 @@include('components/footer.html')

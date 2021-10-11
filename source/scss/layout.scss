@@ -3,10 +3,26 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+
+    &.header-fixed {
+      .all {
+        padding-top: 75px;
+
+        @media (max-width: $mobile-max) {
+          padding-top: 70px;
+        }
+      }
+    }
+
 }
 
 .all {
+  margin-top: -75px;
   flex-grow: 1;
+
+  @media (max-width: $mobile-max) {
+    margin-top: -70px;
+  }
 }
 
 .container {
@@ -17,6 +33,10 @@
   @media (max-width: $tablet-max) {
     width: 100%;
     padding: 0 20px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 0 16px;
   }
 
   &--content {

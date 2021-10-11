@@ -1,0 +1,91 @@
+.start-home {
+  height: 540px;
+  color: $white;
+  background-color: #0a2a1b;
+  background-image: url('../img/official/start-home-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $tablet-max) {
+    background-image: url('../img/official/start-home-tablet.jpg');
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 140px 80px 24px 0;
+
+    @media (max-width: $tablet-max) {
+      justify-content: center;
+      padding: 140px 0 24px;
+    }
+  }
+
+  &__inner {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: $tablet-max) {
+      max-width: 340px;
+    }
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 400;
+
+    @media (max-width: $tablet-max) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    @media (max-width: $mobile-max) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+
+  &__desc {
+    margin: 32px 0 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    @media (max-width: $mobile-max) {
+      margin: 12px 0 40px;
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    margin: 20px 0 0;
+
+    &--tel {
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 21px;
+        width: 21px;
+        height: 22px;
+        fill: $white;
+        transform: translateY(-50%);
+      }
+    }
+
+    &--way {
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 19px;
+        height: 19px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

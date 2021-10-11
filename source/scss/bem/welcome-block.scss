@@ -1,0 +1,24 @@
+.welcome-block {
+  text-align: center;
+  &__wrapper {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+
+    @media (max-width: $tablet-max) {
+      font-size: 18px;
+    }
+  }
+
+  &__separator {
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 20px auto 32px;
+    background-color: $green;
+  }
+}

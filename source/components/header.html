@@ -1,4 +1,300 @@
 <body>
     <!-- page-wrapper -->
     <div class="page-wrapper">
-    <header></header>
+    <header class="header js-header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__toggle-wrapper">
+                    <button class="header__toggle-button js-burger-menu-button" type="button">
+                        <span class="header__toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+                <a href="/" class="header__logo">
+                    <svg>
+                        <use xlink:href="#ic_logo_header"></use>
+                    </svg>
+                </a>
+                <nav class="header__nav-wrapper">
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__nav-item has-lvl2">
+                            <span class="header__nav-link">
+                                Каталог
+                                <svg>
+                                    <use xlink:href="#ic_arrow_header_nav"></use>
+                                </svg>
+                            </span>
+                            <div class="header__nav-lvl2-wrapper">
+                                <ul class="header__nav-lvl2">
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Швейцарские часы
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Ювелирные украшения
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Сумки
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Бриллианты и драгоценные камни
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Антиквариат
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-item has-lvl2">
+                            <span class="header__nav-link">
+                                Продать
+                                <svg>
+                                    <use xlink:href="#ic_arrow_header_nav"></use>
+                                </svg>
+                            </span>
+                            <div class="header__nav-lvl2-wrapper">
+                                <ul class="header__nav-lvl2">
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Швейцарские часы
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Ювелирные украшения
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Сумки
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Бриллианты и драгоценные камни
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Антиквариат
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-item has-lvl2">
+                            <span class="header__nav-link">
+                                Услуги
+                                <svg>
+                                    <use xlink:href="#ic_arrow_header_nav"></use>
+                                </svg>
+                            </span>
+                            <div class="header__nav-lvl2-wrapper">
+                                <ul class="header__nav-lvl2">
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Экспертиза ювелирных украшений и бриллиантов
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Аутентификация сумок
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Часовая мастерская
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-lvl2-item">
+                                        <a href="#" class="header__nav-lvl2-link">
+                                            Выездная оценка
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/" class="header__nav-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__inner">
+                    <a class="header__address header__with-icon">
+                        <svg>
+                            <use xlink:href="#ic_address"></use>
+                        </svg>
+                        Комсомольский пр-т,  д42с1
+                    </a>
+                    <a href="tel:88006002981" class="header__tel header__with-icon">
+                        <svg>
+                            <use xlink:href="#ic_tel">
+
+                            </use>
+                        </svg>
+                        8 (800) 600-29-81
+                    </a>
+                </div>
+                <div class="header__burger-wrapper js-burger-menu-wrapper">
+                    <button class="header__burger-close js-burger-menu-close" type="button"></button>
+                    <div class="header__burger-navs js-filter-panel">
+                        <div class="js-filter-panel-section header__burger-filter-section">
+                            <div class="header__burger-filter-header js-filter-panel-section-open">
+                                <a href="/" class="header__burger-header-text">
+                                    Главная
+                                </a>
+                            </div>
+                        </div>
+                        <div class="js-filter-panel-section header__burger-filter-section">
+                            <div class="header__burger-filter-header js-filter-panel-section-open">
+                                <button class="header__burger-return js-filter-panel-section-return" type="button">
+                                    <svg>
+                                        <use xlink:href="#ic_arrow_header_nav"></use>
+                                    </svg>
+                                    Назад
+                                </button>
+                                <p  class="header__burger-header-text">
+                                    Каталог
+                                    <svg>
+                                        <use xlink:href="#ic_arrow_header_nav"></use>
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="header__burger-filter-content js-burger-content">
+                                <ul class="header__burger-content-list">
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Швейцарские часы</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Ювелирные украшения</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Сумки</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Бриллианты и драгоценные камни</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Антиквариат</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="js-filter-panel-section header__burger-filter-section">
+                            <div class="header__burger-filter-header js-filter-panel-section-open">
+                                <button class="header__burger-return js-filter-panel-section-return" type="button">
+                                    <svg>
+                                        <use xlink:href="#ic_arrow_header_nav"></use>
+                                    </svg>
+                                    Назад
+                                </button>
+                                <p  class="header__burger-header-text">
+                                    Продать
+                                    <svg>
+                                        <use xlink:href="#ic_arrow_header_nav"></use>
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="header__burger-filter-content js-burger-content">
+                                <ul class="header__burger-content-list">
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Швейцарские часы</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Ювелирные украшения</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Сумки</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Бриллианты и драгоценные камни</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Антиквариат</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="js-filter-panel-section header__burger-filter-section">
+                            <div class="header__burger-filter-header js-filter-panel-section-open">
+                                <button class="header__burger-return js-filter-panel-section-return" type="button">
+                                    <svg>
+                                        <use xlink:href="#ic_arrow_header_nav"></use>
+                                    </svg>
+                                    Назад
+                                </button>
+                                <p  class="header__burger-header-text">
+                                    Услуги
+                                    <svg>
+                                        <use xlink:href="#ic_arrow_header_nav"></use>
+                                    </svg>
+                                </p>
+                            </div>
+                            <div class="header__burger-filter-content js-burger-content">
+                                <ul class="header__burger-content-list">
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Экспертиза ювелирных украшений
+                                            и бриллиантов</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Аутентификация сумок</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Часовая мастерская</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Бриллианты и драгоценные камни</a>
+                                    </li>
+                                    <li class="header__burger-content-item">
+                                        <a href="#">Выездная оценка</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="js-filter-panel-section header__burger-filter-section">
+                            <div class="header__burger-filter-header js-filter-panel-section-open">
+                                <a href="#" class="header__burger-header-text">
+                                    Контакты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__inner">
+                        <a class="header__address header__with-icon">
+                            <svg>
+                                <use xlink:href="#ic_address"></use>
+                            </svg>
+                            Комсомольский пр-т,  д42с1
+                        </a>
+                        <a href="tel:88006002981" class="header__tel header__with-icon">
+                            <svg>
+                                <use xlink:href="#ic_tel">
+
+                                </use>
+                            </svg>
+                            8 (800) 600-29-81
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

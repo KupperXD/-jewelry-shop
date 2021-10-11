@@ -1,0 +1,136 @@
+.footer {
+  padding: 44px 0 24px;
+  background: $green;
+  color: $white;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (max-width: $tablet-max) {
+    padding: 42px 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px 64px;
+
+    @media (max-width: $tablet-max) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: $mobile-max) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  }
+  &__logo {
+    width: 190px;
+    height: 48px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    @media (max-width: $tablet-max) {
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $white;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: -32px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    @media (max-width: $tablet-max) {
+      margin: 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 32px 0 0;
+      order: 1;
+      text-align: center;
+    }
+
+    a {
+      color: inherit;
+      font: inherit;
+    }
+  }
+
+  &__navs {
+    grid-row: 1/ 2 span;
+    padding: 0 16px 0 0;
+
+    @media (max-width: $tablet-max) {
+      grid-row: auto;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 38px 0 0;
+      padding: 0;
+    }
+
+    &--main {
+      @media (max-width: $tablet-max) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+    }
+
+    &--catalog {
+      @media (max-width: $tablet-max) {
+        grid-column: 2/3;
+        grid-row: 2/4;
+      }
+    }
+  }
+
+  &__nav {
+
+    @media (max-width: $mobile-max) {
+      text-align: center;
+    }
+
+    &:not(:first-of-type) {
+      margin: 8px 0 0;
+    }
+
+    a {
+      color: inherit;
+      font: inherit;
+      transition: opacity 0.3s ease-in-out;
+
+      @media (max-width: $mobile-max) {
+        text-align: center;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__copyright {
+    margin: 32px 0 0;
+    font-size: 10px;
+
+    @media (max-width: $tablet-max) {
+      max-width: 170px;
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 32px auto 0;
+      text-align: center;
+    }
+  }
+}

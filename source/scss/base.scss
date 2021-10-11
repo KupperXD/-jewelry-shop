@@ -1,11 +1,17 @@
+:root {
+  --header-text-color: #fff;
+}
+
 body {
   min-width: 320px;
   background-color: $white;
-  font-size: 14px;
-  line-height: 18px;
+  font-family: $sans;
+  font-size: 13px;
+  line-height: 16px;
   font-weight: 400;
   letter-spacing: normal;
   overflow-x: hidden;
+  color: $main-text-color;
 }
 
 html {
@@ -55,4 +61,21 @@ ul:not([class]), ol:not([class]) {
 
 p:not([class]) {
 
+}
+
+.btn {
+  min-width: 200px;
+  padding: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  letter-spacing: normal;
+  color: $white;
 }
