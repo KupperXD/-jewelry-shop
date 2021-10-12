@@ -25,12 +25,15 @@ const pluginsJSPaths = [
     'node_modules/sweetalert2/dist/sweetalert2.js',
     'node_modules/swiper/swiper-bundle.min.js',
     'node_modules/select2/dist/js/select2.min.js',
+    'node_modules/air-datepicker/air-datepicker.js',
+    'node_modules/imask/dist/imask.min.js',
 ];
 
 const pluginsCSSPaths = [
     'node_modules/sweetalert2/dist/sweetalert2.min.css',
     'node_modules/select2/dist/css/select2.min.css',
     'node_modules/swiper/swiper-bundle.min.css',
+    'node_modules/air-datepicker/air-datepicker.css'
 ];
 
 const copySrc = [

@@ -1,0 +1,45 @@
+.form-field {
+  position: relative;
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2e2e2e;
+
+    &::placeholder {
+      font-size: 14px;
+      color: #2e2e2e;
+    }
+  }
+
+  &__error {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    font-size: 10px;
+    line-height: 1;
+    color: red;
+  }
+
+  &.has-error {
+    .form-field__inner {
+      border-color: red;
+    }
+
+    .form-field__error {
+      display: block;
+    }
+  }
+}

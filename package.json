@@ -20,6 +20,7 @@
   "homepage": "https://github.com/KupperXD/-jewelry-shop#readme",
   "devDependencies": {
     "@babel/core": "^7.15.8",
+    "air-datepicker": "^3.0.1",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
     "babel-plugin-transform-es2015-constants": "^6.1.4",
@@ -48,6 +49,7 @@
     "gulp-imagemin": "^8.0.0",
     "gulp-newer": "^1.4.0",
     "gulp-posthtml": "^3.0.5",
+    "imask": "^6.2.2",
     "jquery": "^3.6.0",
     "posthtml-include": "^1.7.2",
     "sass": "^1.42.1",

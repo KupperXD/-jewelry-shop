@@ -1,0 +1,54 @@
+.meeting-appoint {
+  &__title {
+    font-size: 21px;
+    line-height: 24px;
+    color: #2e2e2e;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @media (max-width: $tablet-max) {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  &__form-wrapper {
+    width: 250px;
+    margin: 32px auto 0;
+  }
+
+  &__form-field {
+    &:not(:first-child) {
+      margin: 10px 0 0;
+    }
+  }
+
+  &__group {
+    margin: 20px 0 0;
+
+    &-title {
+      font-size: 16px;
+      line-height: 18px;
+      color: #2e2e2e;
+      text-align: left;
+    }
+
+    &-grid {
+      display: flex;
+      align-items: flex-start;
+      margin: 10px -9px 0;
+    }
+    
+    &-item {
+      width: calc((100% - 9px) / 2);
+      margin: 0 9px;
+    }
+  }
+
+  &__submit {
+    margin: 52px auto 0;
+  }
+
+}

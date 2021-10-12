@@ -7,21 +7,48 @@
 
     // Выпадашка
     .select2-dropdown {
-      border: 1px solid $black;
-      border-top: none;
-      border-radius: 0 0 22px 22px;
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
       overflow: hidden;
+      top: 4px;
     }
 
     .select2-results {
+
       // Option в выпадашке
       &__option {
-        padding: 2px 8px 0 16px;
+        padding: 2px 8px 0 12px;
         font-size: 14px;
         line-height: 24px;
-        color: $black;
+        color:#2e2e2e;
         text-align: left;
         font-weight: 400;
+      }
+    }
+  }
+
+  &-container {
+    &.select2-container--default {
+      .select2-results {
+        padding: 11px 7px 11px 0;
+      }
+      .select2-results .select2-results__options {
+        max-height: 120px;
+        padding: 0 4px 0 0;
+
+        &::-webkit-scrollbar {
+          width: 3px;
+          border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: #dcdcdc;
+          border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #2e2e2e;
+        }
       }
     }
   }
@@ -30,7 +57,7 @@
     width: 100%;
     &.select2-container--open {
       .select2-selection {
-        border-radius: 22px 22px 0 0;
+        border-radius: 4px;
         border-bottom-color: transparent;
         &__arrow {
           top: 52%;
@@ -39,24 +66,26 @@
       }
     }
 
+
+
     .select2-selection {
       position: relative;
       display: flex;
       align-items: center;
       height: 40px;
-      border-radius: 48px;
-      border: 1px solid $black;
+      border-radius: 4px;
+      border: 1px solid #eeeeee;
       outline: none;
 
       &__rendered {
         width: 100%;
         max-width: 195px;
-        padding: 4px 4px 4px 16px;
+        padding: 4px 4px 4px 12px;
         font-size: 14px;
         line-height: 18px;
         font-weight: 400;
         text-align: left;
-        color: $black;
+        color: #2e2e2e;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

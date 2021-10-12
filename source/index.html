@@ -448,7 +448,7 @@
                                     в&nbsp;нашем офисе и&nbsp;приезжайте в&nbsp;удобное
                                     для вас время.
                                 </p>
-                                <button class="office__meeting btn btn--small" type="button">
+                                <button class="office__meeting btn btn--small js-meeting-appoint-open-popup" type="button">
                                     Назначить встречу
                                 </button>
                             </div>
@@ -531,5 +531,68 @@
                 </div>
             </div>
         </main>
+        <div class="hidden">
+            <div class="meeting-appoint js-meeting-appoint-popup">
+                <div class="meeting-appoint__wrapper">
+                    <h3 class="meeting-appoint__title">Назначить встречу</h3>
+                    <div class="meeting-appoint__form-wrapper">
+                        <form>
+                            <div class="meeting-appoint__form-field form-field has-error">
+                                <label class="form-field__inner">
+                                    <input placeholder="Ваше имя*" name="name" type="text">
+                                </label>
+                            </div>
+                            <div class="meeting-appoint__form-field form-field">
+                                <label class="form-field__inner">
+                                    <input class="js-phone-mask" placeholder="+7 (___) ___-__-__" name="name" type="text">
+                                </label>
+                            </div>
+                            <div class="meeting-appoint__group">
+                                <p class="meeting-appoint__group-title">
+                                    Выберете дату и время встречи
+                                </p>
+                                <div class="meeting-appoint__group-grid">
+                                    <div class="meeting-appoint__group-item custom-datepicker">
+                                        <div class="custom-datepicker__wrapper js-datepicker-wrapper">
+                                            <input readonly placeholder="дд.мм.гг" class="js-datepicker" type="text">
+                                            <div class="custom-datepicker__icon">
+                                                <img src="img/official/ic_calendar.png" width="19" height="19" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting-appoint__group-item custom-select">
+                                        <div class="custom-select__wrapper">
+                                            <select class="js-select2">
+                                                <option value="0">
+                                                    09:00-10:00
+                                                </option>
+                                                <option value="1">
+                                                    10:00-11:00
+                                                </option>
+                                                <option value="2">
+                                                    11:00-12:00
+                                                </option>
+                                                <option value="3">
+                                                    12:00-13:00
+                                                </option>
+                                                <option value="4">
+                                                    13:00-14:00
+                                                </option>
+                                                <option value="5">
+                                                    14:00-15:00
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="meeting-appoint__submit btn btn--black btn--small" type="submit">
+                                Назначить встречу
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @@include('components/footer.html')

@@ -189,6 +189,51 @@
           });
         };
 
+        const sweetAlertCssClass = {
+            container: 'custom-popup__container',
+            popup: 'custom-popup',
+            htmlContainer: 'custom-popup__wrapper',
+            closeButton: 'custom-popup__close',
+        }
+
+        $(document).on('click', '.js-meeting-appoint-open-popup', (evt) => {
+            const popupTemplate = $('.js-meeting-appoint-popup').get(0);
+
+            if (typeof popupTemplate === 'undefined' || !popupTemplate) {
+                return;
+            }
+
+            const cloneTemplate = popupTemplate.cloneNode(true);
+            const $datePickerHolder = $(cloneTemplate).find('.js-datepicker-wrapper');
+            const phoneInput = $(cloneTemplate).find('.js-phone-mask').get(0);
+            const datePicker = $datePickerHolder.find('.js-datepicker').get(0);
+
+            new AirDatepicker(datePicker, {
+                container: $datePickerHolder.get(0),
+                minDate: new Date(),
+            });
+
+            $(cloneTemplate).find('.js-select2').each((index, item) => {
+                $(item).select2({
+                    width: 'style',
+                    dropdownParent: $(item).parent(),
+                });
+            });
+
+            IMask(phoneInput, {
+                mask: '+7 (000) 000-00-00',
+            });
+
+            Swal.fire({
+                backdrop: true,
+                html: cloneTemplate,
+                customClass: sweetAlertCssClass,
+                padding: 0,
+                showConfirmButton: false,
+                showCloseButton: true,
+            })
+        });
+
         const init = () => {
             burgerButtonPlugin();
             burgerSectionPlugin();

@@ -1,32 +1,27 @@
 .custom-popup {
-  width: 770px;
-  border-radius: 24px;
+  width: 470px;
+  border-radius: 0;
 
   @media (max-width: $tablet-max) {
-    width: 570px;
-  }
-
-  @media (max-width: $mobile-max) {
-    width: 100%;
+    width: 290px;
   }
 
   .custom-popup__wrapper {
     margin: 0;
-    padding: 40px 56px 72px;
-    font-size: 14px;
-    line-height: 18px;
+    padding: 32px 19px 52px;
+    font-size: 13px;
+    line-height: 14px;
     color: $main-text-color;
-
-    @media (max-width: $tablet-max) {
-      padding: 32px 68px;
-    }
-
-    @media (max-width: $mobile-max) {
-      padding: 24px 24px 32px;
-    }
+    overflow: visible;
   }
 
   &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    margin: 0;
     color: $black;
     outline: none;
   }
