@@ -1,0 +1,113 @@
+.product-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 271px;
+  height: 509px;
+  padding: 40px 16px 32px;
+  box-shadow: 3px 5px 16px rgba(228, 228, 228, 0.75);
+  background-color: #f8f8f8;
+  text-align: center;
+  border-radius: 16px;
+
+  @media (max-width: $tablet-max) {
+    width: 136px;
+    height: 290px;
+    padding: 20px 10px 16px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 269px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dcdcdc;
+
+    @media (max-width: $tablet-max) {
+      top: 137px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+
+    @media (max-width: $tablet-max) {
+      width: 101px;
+      height: 101px;
+    }
+
+    img {
+      width: auto;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    max-width: 150px;
+    min-height: 36px;
+    margin: 56px 0 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+
+    @media (max-width: $tablet-max) {
+      min-height: 24px;
+      margin: 26px 0 0;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  &__desc {
+    max-width: 160px;
+    margin: 16px 0 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #909090;
+
+    @media (max-width: $tablet-max) {
+      margin: 10px 0 0;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  &__price {
+    margin: 24px 0 0;
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: 700;
+
+    @media (max-width: $tablet-max) {
+      margin: 16px 0 0;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__link {
+    height: 34px;
+    min-width: 160px;
+    margin: 24px 0 0;
+    font-size: 12px;
+
+    @media (max-width: $tablet-max) {
+      height: 25px;
+      min-width: 116px;
+      padding: 2px;
+      margin: 20px 0 0;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}

@@ -78,4 +78,20 @@ p:not([class]) {
   font-style: normal;
   letter-spacing: normal;
   color: $white;
+  transition: opacity 0.3s ease-in-out;
+
+  &--black {
+    color: $black;
+    border-color: $black;
+  }
+
+  &--small {
+    min-width: 160px;
+    height: 34px;
+    font-size: 12px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

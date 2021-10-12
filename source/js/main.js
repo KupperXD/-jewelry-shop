@@ -139,10 +139,62 @@
             scrollHandler();
         }
 
+        const initSliderMain = () => {
+            const $swipers = $('.js-slider-main');
+            const windowWidth = $(window).innerWidth();
+            const MAX_WIDTH = 768;
+
+            if (windowWidth > MAX_WIDTH) {
+                return;
+            }
+
+            $swipers.each((index, item) => {
+                const pagination = $(item).find('.swiper-pagination').get(0);
+
+                new Swiper(item, {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    pagination: {
+                        el: pagination,
+                      clickable: true,
+                    },
+                })
+            });
+
+        }
+
+        const initMaps = () => {
+          if (!ymaps || typeof ymaps === 'undefined') {
+              console.log('Карты не найдены');
+          }
+          ymaps.ready(() => {
+              const myMap = new ymaps.Map('main-map', {
+                  center: [55.721300069007306,37.57314149999994],
+                  zoom: 17,
+                  controls: ['zoomControl'],
+              });
+
+              const geoObject = new ymaps.Placemark( [55.7209,37.5726], {
+                  balloonContent: `<p>8 (800) 600-29-81</p><p>Режим работы: 09:00-21:00 без выходных.<br>
+                    Для согласования более позднего времени визита, 
+                    пожалуйста, записывайтесь заранее.</p>`,
+              }, {
+                  iconLayout: 'default#imageWithContent',
+                  iconImageHref: 'img/official/map_pin.png',
+                  iconImageSize: [52, 51],
+                  iconImageOffset: [-26, -26],
+              });
+
+              myMap.geoObjects.add(geoObject);
+          });
+        };
+
         const init = () => {
             burgerButtonPlugin();
             burgerSectionPlugin();
             fixedHeaderPlugin();
+            initSliderMain();
+            initMaps();
         }
 
         init();

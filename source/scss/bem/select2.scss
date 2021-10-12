@@ -1,0 +1,82 @@
+.select2 {
+  &-container {
+    // Скрываем сагест
+    .select2-search {
+      display: none;
+    }
+
+    // Выпадашка
+    .select2-dropdown {
+      border: 1px solid $black;
+      border-top: none;
+      border-radius: 0 0 22px 22px;
+      overflow: hidden;
+    }
+
+    .select2-results {
+      // Option в выпадашке
+      &__option {
+        padding: 2px 8px 0 16px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black;
+        text-align: left;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &.select2-container {
+    width: 100%;
+    &.select2-container--open {
+      .select2-selection {
+        border-radius: 22px 22px 0 0;
+        border-bottom-color: transparent;
+        &__arrow {
+          top: 52%;
+          transform: translateY(-50%) rotate(135deg);
+        }
+      }
+    }
+
+    .select2-selection {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      border-radius: 48px;
+      border: 1px solid $black;
+      outline: none;
+
+      &__rendered {
+        width: 100%;
+        max-width: 195px;
+        padding: 4px 4px 4px 16px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        text-align: left;
+        color: $black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &__arrow {
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 48%;
+        right: 16px;
+        border-left: 1px solid $black;
+        border-bottom: 1px solid $black;
+        transform: translateY(-50%) rotate(-45deg);
+        transition: transform 0.2s ease-in-out;
+
+        b {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.history-main {
+  &__wrapper {
+    padding: 45px 0 70px;
+    background-color: #eeeeee;
+
+    @media (max-width: $tablet-max) {
+      padding: 40px 0 48px;
+    }
+
+    @media (max-width: $mobile-max) {
+      padding: 40px 16px 64px;
+      margin: 0 -16px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 267px;
+    height: 66px;
+    margin: 0 auto;
+    fill: #3c3c3c;
+
+    @media (max-width: $tablet-max) {
+      width: 212px;
+      height: 52px;
+    }
+  }
+
+  &__content {
+    width: 970px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 13px;
+
+    @media (max-width: $tablet-max) {
+      width: 608px;
+    }
+
+    @media (max-width: $mobile-max) {
+      width: 100%;
+      max-width: 608px;
+    }
+
+    p {
+      &:not(:first-child) {
+        margin: 24px 0 0;
+      }
+    }
+  }
+}

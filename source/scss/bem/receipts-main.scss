@@ -1,0 +1,59 @@
+.receipts-main {
+  position: relative;
+
+  &__logo {
+    width: 1041px;
+    height: 1027px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fbfbfb;
+
+    @media (max-width: $tablet-max) {
+      width: 717px;
+      height: 707px;
+      top: 70%;
+    }
+
+    @media (max-width: $mobile-max) {
+      top: 110%;
+    }
+  }
+
+  &__content {
+    padding: 62px 0 40px;
+
+    @media (max-width: $tablet-max) {
+      padding: 24px 0 40px;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0 -16px;
+      padding: 40px 16px 72px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 5;
+
+    @media (max-width: $tablet-max) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__show-all {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 5;
+  }
+}

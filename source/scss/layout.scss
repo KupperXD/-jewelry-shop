@@ -32,7 +32,7 @@
 
   @media (max-width: $tablet-max) {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
 
   @media (max-width: $mobile-max) {
@@ -42,7 +42,7 @@
   &--content {
     @media (max-width: $tablet-max) and (min-width: $tablet-min) {
       width: 670px;
-      padding: 0 20px;
+      padding: 0 16px;
     }
   }
 }

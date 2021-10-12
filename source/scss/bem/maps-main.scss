@@ -1,0 +1,119 @@
+.maps-main {
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+    }
+  }
+
+  &__maps {
+    width: 590px;
+    height: 420px;
+    margin: 0 84px 0 0;
+    background-color: #eee;
+
+    @media (max-width: $tablet-max) {
+      width: 365px;
+      height: 420px;
+      margin: 0 16px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      width: auto;
+      margin: 0 -16px;
+    }
+  }
+
+  &__content {
+    @media (max-width: $mobile-max) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text-with-link {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0 0;
+    font-size: 14px;
+    color: #3c3c3c;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      max-width: 268px;
+      margin: 32px 0 0;
+      text-align: center;
+    }
+
+    svg {
+      width: 16px;
+      height: 18px;
+      flex-shrink: 0;
+      margin: 0 10px 0 0;
+      fill: #3c3c3c;
+
+      @media (max-width: $mobile-max) {
+        margin: 0;
+        transform: translateY(2px);
+      }
+    }
+
+    span {
+      max-width: 316px;
+
+      @media (max-width: $mobile-max) {
+        text-align: center;
+      }
+    }
+
+    &--small {
+      span {
+        @media (max-width: $mobile-max) {
+          max-width: 180px;
+        }
+      }
+    }
+  }
+
+  &__buttons-list {
+    display: flex;
+    align-items: center;
+    margin: 52px 0 0;
+
+    @media (max-width: $tablet-max) {
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 32px 0 0;
+    }
+  }
+
+  &__button {
+    position: relative;
+    margin: 0 10px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0 auto;
+    }
+
+    &:not(:first-of-type) {
+      @media (max-width: $tablet-max) {
+        margin: 16px 0 0;
+      }
+    }
+
+    img {
+      margin: 0 8px 0 0;
+    }
+
+    &--taxi {
+      min-width: 190px;
+    }
+  }
+}
