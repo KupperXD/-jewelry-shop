@@ -1,0 +1,67 @@
+.redemption-page {
+  &__welcome-block {
+    margin: 72px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 52px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__benefits {
+    margin: 110px 0 0;
+    padding: 0 0 116px;
+
+    @media (max-width: $tablet-max) {
+      margin: 72px 0 0;
+      padding: 0 0 48px;
+    }
+  }
+
+  &__way-sale {
+    margin: 76px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__history {
+    margin: 104px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 52px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__maps {
+    margin: 66px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 24px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0;
+    }
+  }
+
+  &__grade-online {
+    margin: 52px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 32px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0;
+    }
+  }
+}

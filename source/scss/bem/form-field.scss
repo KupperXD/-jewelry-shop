@@ -11,6 +11,7 @@
 
   input {
     width: 100%;
+    padding: 0;
     border: none;
     background: none;
     font-size: 14px;
@@ -40,6 +41,12 @@
 
     .form-field__error {
       display: block;
+    }
+  }
+
+  &--white {
+    .form-field__inner {
+      background-color: $white;
     }
   }
 }

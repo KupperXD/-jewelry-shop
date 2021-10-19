@@ -1,0 +1,28 @@
+.grade-online {
+  &__submit {
+    margin: 40px auto 0;
+  }
+
+  &__form-wrapper {
+    width: 530px;
+  }
+
+  &__policy-text {
+    max-width: 440px;
+    margin: 24px auto 0;
+    font-size: 12px;
+  }
+
+  &__form-grid {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 20px 30px;
+
+    &-item {
+      &--comments {
+        grid-column: 2/3;
+        grid-row: 2 / 3 span;
+      }
+    }
+  }
+}
