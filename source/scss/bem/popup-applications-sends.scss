@@ -1,0 +1,27 @@
+.popup-applications-sends {
+  &__title {
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 250px;
+    margin: 40px auto 0;
+    text-align: center;
+
+    @media (max-width: $tablet-max) {
+      margin: 24px auto 0;
+    }
+  }
+
+  &__link {
+    max-width: 160px;
+    margin: 40px auto 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 32px auto 0;
+    }
+  }
+}

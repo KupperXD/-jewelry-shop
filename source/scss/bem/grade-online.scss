@@ -5,6 +5,10 @@
 
   &__form-wrapper {
     width: 530px;
+
+    @media (max-width: $mobile-max) {
+      width: auto;
+    }
   }
 
   &__policy-text {
@@ -18,11 +22,49 @@
     grid-template-columns: 250px 250px;
     gap: 20px 30px;
 
+    @media (max-width: $mobile-max) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
     &-item {
+      @media (max-width: $mobile-max) {
+        width: 250px;
+      }
       &--comments {
         grid-column: 2/3;
         grid-row: 2 / 3 span;
       }
+
+      &:not(:first-of-type) {
+        @media (max-width: $mobile-max) {
+          margin: 20px 0 0;
+        }
+      }
+
+      &--mobile-gap {
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+      }
+    }
+  }
+
+  &__form-file,
+  &__captcha {
+    @media (max-width: $mobile-max) {
+      margin: 0 auto;
+    }
+  }
+
+  &__captcha {
+    max-height: 48px;
+
+    @media (max-width: $mobile-max) {
+      display: flex;
+      justify-content: center;
     }
   }
 }

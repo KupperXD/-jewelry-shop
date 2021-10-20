@@ -61,5 +61,17 @@
     &::after {
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+
+    &--warning {
+      width: 30px;
+      height: 26px;
+      background-image: url('../img/official/warning-icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
   }
 }

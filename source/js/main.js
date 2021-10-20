@@ -189,6 +189,44 @@
           });
         };
 
+        const downloadFile = ($container) => {
+            const defaultLabelText = 'Загрузить фото или файл';
+            const activeClass = 'has-file';
+            const $text = $container.find('.js-download-file-text');
+
+            $container.on('change', 'input[type="file"]', (evt) => {
+               const target = evt.target;
+
+                console.log(target.files);
+
+               if (typeof target.files[0] === 'undefined') {
+                   $container.removeClass(activeClass);
+                   $text.text(defaultLabelText);
+                   return;
+               }
+
+               $text.text(target.files[0].name);
+               $container.addClass(activeClass);
+            });
+
+            $container.on('click', '.js-delete-file', () => {
+                $container.find('input[type="file"]').val();
+                $container.removeClass(activeClass);
+                $text.text(defaultLabelText);
+            });
+        }
+
+        const initTelephoneMask = ($field) => {
+            const field = $field.get(0);
+
+            if (typeof field === 'undefined') {
+                return;
+            }
+            IMask(field, {
+                mask: '+7 (000) 000-00-00',
+            });
+        }
+
         const sweetAlertCssClass = {
             container: 'custom-popup__container',
             popup: 'custom-popup',
@@ -234,12 +272,40 @@
             })
         });
 
+        $(document).on('click', '.js-grade-online-open-popup', (evt) => {
+            evt.preventDefault();
+            const popupTemplate = $('.js-popup-applications-sends').get(0);
+
+            if (typeof popupTemplate === 'undefined' || !popupTemplate) {
+                return;
+            }
+
+            const cloneTemplate = popupTemplate.cloneNode(true);
+
+            Swal.fire({
+                backdrop: true,
+                html: cloneTemplate,
+                customClass: sweetAlertCssClass,
+                padding: 0,
+                showConfirmButton: false,
+                showCloseButton: true,
+            })
+        });
+
         const init = () => {
             burgerButtonPlugin();
             burgerSectionPlugin();
             fixedHeaderPlugin();
             initSliderMain();
             initMaps();
+
+            $('.js-download-file').each((index, item) => {
+                downloadFile($(item));
+            });
+
+            $('.js-init-phone-mask').each((index, item) => {
+               initTelephoneMask($(item));
+            });
         }
 
         init();

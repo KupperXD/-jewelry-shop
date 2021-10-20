@@ -1,4 +1,14 @@
 .redemption-page {
+  padding-bottom: 56px;
+
+  @media (max-width: $tablet-max) {
+    padding-bottom: 24px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 32px;
+  }
+
   &__welcome-block {
     margin: 72px 0 0;
 

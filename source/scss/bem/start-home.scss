@@ -118,4 +118,73 @@
       max-width: 530px;
     }
   }
+
+  &--redemption-jewelry {
+    background-image: url('../img/official/redemption-pages/redemption-jewelry-desktop.jpg');
+
+    @media (max-width: $tablet-max) {
+      background-image: url('../img/official/redemption-pages/redemption-jewelry-tablet.jpg');
+    }
+
+    @media (max-width: $mobile-max) {
+      background-image: url('../img/official/redemption-pages/redemption-jewelry-mobile.jpg');
+    }
+
+    .start-home__wrapper {
+      padding-right: 0;
+    }
+
+    .start-home__inner {
+      max-width: 630px;
+    }
+
+    .start-home__title {
+      text-align: center;
+
+      br {
+        @media (max-width: $tablet-max) {
+          display: none;
+        }
+      }
+    }
+
+    .start-home__buttons-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 48px;
+      margin: -10px -13px;
+
+      @media (max-width: $tablet-max) {
+        display: block;
+        margin: 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        padding: 0;
+      }
+    }
+
+    .start-home__button {
+      margin: 10px 13px;
+
+      @media (max-width: $tablet-max) {
+        margin: 0;
+      }
+
+      &:not(:first-of-type) {
+        @media (max-width: $tablet-max) {
+          margin: 20px 0 0;
+        }
+      }
+    }
+
+    .start-home__desc {
+      @media (max-width: $mobile-max) {
+        margin-top: 24px;
+      }
+    }
+  }
+
 }
