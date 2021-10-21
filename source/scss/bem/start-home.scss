@@ -187,4 +187,12 @@
     }
   }
 
+  &--catalog {
+    background-image: url('../img/official/catalog-jewelry-desktop.jpg');
+
+    @media (max-width: $tablet-max) {
+      background-image: url('../img/official/catalog-jewerly-tablet.jpg');
+    }
+  }
+
 }

@@ -1,0 +1,51 @@
+.accordion-filter {
+    min-height: 24px;
+    max-height: 24px;
+    overflow: hidden;
+    transition: min-height 0.3s ease-in-out;
+
+    &.opened {
+      .accordion-filter__arrow {
+        transform: rotate(90deg);
+      }
+    }
+
+    &__heading {
+      padding-bottom: 12px;
+    }
+
+    &__button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 0;
+      background: none;
+      border: none;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+  &__arrow {
+    width: 8px;
+    height: 15px;
+    margin: 0 8px 0 0;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #3c3c3c;
+    }
+  }
+
+  .checkbox-simple {
+    &:not(:first-of-type) {
+      margin: 10px 0 0;
+    }
+  }
+}

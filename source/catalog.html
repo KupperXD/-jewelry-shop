@@ -1,0 +1,627 @@
+@@include('components/head.html')
+<div style="display: none;">
+    @@include('../dist/img/svg/sprite.svg')
+</div>
+@@include('components/header.html')
+    <div class="all">
+        <main class="catalog-page">
+            <div class="start-home--catalog start-home catalog-page__start-home">
+                <div class="container container--content">
+                    <div class="start-home__wrapper">
+                        <div class="start-home__inner">
+                            <h1 class="start-home__title">
+                                Ювелирный Дом<br>
+                                на Фрунзенской
+                            </h1>
+                            <p class="start-home__desc">
+                                Выкуп и продажа ювелирных изделий
+                            </p>
+                            <div class="start-home__buttons-row">
+                                <button class="start-home__button btn" type="button">
+                                    Перейти в каталог
+                                </button>
+                                <button class="start-home__button start-home__button--way btn btn--with-icon" type="button">
+                                    <img src="img/official/yandex_icon.png" width="20" height="20" alt="">
+                                    Проложить маршрут
+                                </button>
+                                <a href="tel:88006002981" class="start-home__button start-home__button--tel btn btn--with-icon" type="button">
+                                    <svg>
+                                        <use xlink:href="#ic_tel"></use>
+                                    </svg>
+                                    Позвоните нам
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-page__content">
+                <div class="catalog-page__decor">
+                    <svg>
+                        <use xlink:href="#ic_big_logo"></use>
+                    </svg>
+                </div>
+               <div class="container">
+                    <div class="catalog-page__links links-list">
+                        <ul class="links-list__wrapper">
+                            <li class="links-list__item">
+                                <a href="#">
+                                    швейцарские часы
+                                </a>
+                            </li>
+                            <li class="links-list__item">
+                                <a href="#">
+                                    ювелирные украшения
+                                </a>
+                            </li>
+                            <li class="links-list__item">
+                                <a href="#">
+                                    сумки
+                                </a>
+                            </li>
+                            <li class="links-list__item">
+                                <a href="#">
+                                    бриллианты и драгоценные камни
+                                </a>
+                            </li>
+                            <li class="links-list__item">
+                                <a href="#">
+                                    антиквариат
+                                </a>
+                            </li>
+                            <li class="links-list__item">
+                                <a href="#">
+                                    все товары
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                   <div class="catalog-page__wrapper">
+                        <div class="catalog-page__filters-wrapper">
+                            <button class="js-catalog-open-popup-filters catalog-page__filter-open-popup btn btn--black" type="button">
+                                Фильтр
+                            </button>
+                            <div class="catalog-page__filter js-catalog-filter-popup">
+                                <p class="catalog-page__filter-title">
+                                    фильтр
+                                </p>
+                                <form class="catalog-page__filter-form">
+                                    <ul class="catalog-page__filter-list">
+                                        <li class="catalog-page__filter-item accordion-filter js-accordion">
+                                           <div class="accordion-filter__wrapper js-accordion-wrapper">
+                                               <div class="accordion-filter__heading">
+                                                   <button class="accordion-filter__button js-accordion-open" type="button">
+                                                       Фильтр
+                                                       <span class="accordion-filter__arrow">
+                                                       <svg>
+                                                           <use xlink:href="#ic_arrow_filter"></use>
+                                                       </svg>
+                                                   </span>
+                                                   </button>
+                                               </div>
+                                               <div class="accordion-filter__content">
+                                                   <label class="checkbox-simple">
+                                                       <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                       <span class="checkbox-simple__icon">
+                                                   </span>
+                                                       <span class="checkbox-simple__text">
+                                                       По возрастанию цены
+                                                   </span>
+                                                   </label>
+                                                   <label class="checkbox-simple">
+                                                       <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                       <span class="checkbox-simple__icon">
+                                                   </span>
+                                                       <span class="checkbox-simple__text">
+                                                       По убыванию цены
+                                                   </span>
+                                                   </label>
+                                                   <label class="checkbox-simple">
+                                                       <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                       <span class="checkbox-simple__icon">
+                                                   </span>
+                                                       <span class="checkbox-simple__text">
+                                                       По названию (A-Я)
+                                                   </span>
+                                                   </label>
+                                                   <label class="checkbox-simple">
+                                                       <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                       <span class="checkbox-simple__icon">
+                                                   </span>
+                                                       <span class="checkbox-simple__text">
+                                                       По названию (Z-A)
+                                                   </span>
+                                                   </label>
+                                               </div>
+                                           </div>
+                                       </li>
+                                        <li class="catalog-page__filter-item accordion-filter js-accordion">
+                                            <div class="accordion-filter__wrapper js-accordion-wrapper">
+                                                <div class="accordion-filter__heading">
+                                                    <button class="accordion-filter__button js-accordion-open" type="button">
+                                                        Пол
+                                                        <span class="accordion-filter__arrow">
+                                                           <svg>
+                                                               <use xlink:href="#ic_arrow_filter"></use>
+                                                           </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="accordion-filter__content">
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="gender" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Мужские
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="gender" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Женские
+                                                   </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-page__filter-item accordion-filter js-accordion">
+                                            <div class="accordion-filter__wrapper js-accordion-wrapper">
+                                                <div class="accordion-filter__heading">
+                                                    <button class="accordion-filter__button js-accordion-open" type="button">
+                                                        Бренд
+                                                        <span class="accordion-filter__arrow">
+                                                       <svg>
+                                                           <use xlink:href="#ic_arrow_filter"></use>
+                                                       </svg>
+                                                   </span>
+                                                    </button>
+                                                </div>
+                                                <div class="accordion-filter__content">
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       A. Lange & Söhne
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Arnold & Son
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Audemars Piguet
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Bovet
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Breguet
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Cartier
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Chanel
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Chopard
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Christiaan v.d. Klaauw
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Corum
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Cvstos
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       De Bethune
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       De Grisogono
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       DeLaneau
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Dubey & Schaldenbrand
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="brands" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       F.P.Journe
+                                                   </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-page__filter-item accordion-filter js-accordion">
+                                            <div class="accordion-filter__wrapper js-accordion-wrapper">
+                                                <div class="accordion-filter__heading">
+                                                    <button class="accordion-filter__button js-accordion-open" type="button">
+                                                        Материал
+                                                        <span class="accordion-filter__arrow">
+                                                       <svg>
+                                                           <use xlink:href="#ic_arrow_filter"></use>
+                                                       </svg>
+                                                   </span>
+                                                    </button>
+                                                </div>
+                                                <div class="accordion-filter__content">
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Белое золото
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Желтое золото
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Розовое золото
+                                                   </span>
+                                                    </label>
+                                                    <label class="checkbox-simple">
+                                                        <input class="visually-hidden" name="sort-filter" type="checkbox">
+                                                        <span class="checkbox-simple__icon">
+                                                   </span>
+                                                        <span class="checkbox-simple__text">
+                                                       Серебро
+                                                   </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button class="catalog-page__filter-submit btn btn--black"
+                                            type="submit">
+                                        Применить
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                       <div class="catalog-page__products-wrapper">
+                            <ul class="catalog-page__products">
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_1.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_2.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_3.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_4.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_1.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_2.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_3.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_4.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                                <li class="catalog-page__product product-item">
+                                    <div class="product-item__picture">
+                                        <img src="img/official/product/product_example_4.png" alt="">
+                                    </div>
+                                    <p class="product-item__title">
+                                        Наименование товара
+                                        в одну или две строчки
+                                    </p>
+                                    <p class="product-item__desc">
+                                        Краткое описание товара
+                                        и его деталей
+                                    </p>
+                                    <span class="product-item__price">
+                                            $2350
+                                        </span>
+                                    <a href="#" class="btn btn--black product-item__link">
+                                        Перейти в каталог
+                                    </a>
+                                </li>
+                            </ul>
+                           <div class="catalog-page__pagination">
+                                <span class="catalog-page__pagination-text">
+                                    Показано <span>8</span> из 24
+                                </span>
+                               <button class="catalog-page__show-more btn btn--black" type="button">
+                                   Показать ещё
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <div class="catalog-page__history history-main">
+                <div class="container">
+                    <div class="history-main__wrapper">
+                        <svg class="history-main__logo">
+                            <use xlink:href="#ic_logo_header"></use>
+                        </svg>
+                        <div class="history-main__content">
+                            <p>
+                                Дом Piaget, с 1874 года создающий шедевры часового и ювелирного искусства, сочетает в своих
+                                произведениях совершенство и блистательную изысканность.
+                                Благодаря совместной работе почти ста искусных мастеров Мануфактуры и уникальным секретам
+                                Дома Piaget на свет появляются настоящие произведения искусства, сверкающие бриллиантами,
+                                сапфирами, рубинами и изумрудами. Полные эмоций элегантные ювелирные
+                                изделия Дома Piaget – источник радости для своего владельца.
+                            </p>
+                            <p>
+                                Дом Piaget гордится не только своим мастерством,
+                                но и созданием тонких корпусов, использованием чистейших драгоценных камней в произведениях
+                                Высокого часового искусства. Изделия швейцарского ювелирного Дома соответствуют принятым
+                                часовым стандартам, отличаются утонченной элегантностью. Вневременные и актуальные роскошные
+                                ювелирные изделия Piaget идеально подходят любителям изысканных творений.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-page__maps maps-main">
+                <div class="container">
+                    <div class="maps-main__wrapper">
+                        <div id="main-map" class="maps-main__maps js-main-page-map">
+
+                        </div>
+                        <div class="maps-main__content">
+                            <a href="tel:88006002981" class="maps-main__text-with-link">
+                                <svg>
+                                    <use xlink:href="#ic_tel"></use>
+                                </svg>
+                                <span>
+                                    8 (800) 600-29-81
+                                </span>
+                            </a>
+                            <p class="maps-main__text-with-link maps-main__text-with-link--small">
+                                <svg>
+                                    <use xlink:href="#ic_address"></use>
+                                </svg>
+                                <span>Комсомольский проспект дом 42 строение 1</span>
+                            </p>
+                            <p class="maps-main__text-with-link">
+                                <svg>
+                                    <use xlink:href="#ic_time"></use>
+                                </svg>
+                                <span>Режим работы: 09:00-21:00 без выходных.<br>
+                                Для согласования более позднего времени визита,
+                                пожалуйста, записывайтесь заранее.</span>
+                            </p>
+                            <div class="maps-main__buttons-list">
+                                <a class="maps-main__button btn btn--small btn--black">
+                                    <img src="img/official/yandex_icon.png" width="20" height="20" alt="">
+                                    Проложить маршрут
+                                </a>
+                                <a class="maps-main__button maps-main__button--taxi btn btn--small btn--black">
+                                    <img src="img/official/yandex_taxi.png" width="19" height="19" alt="">
+                                    Вызвать яндекс такси
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+@@include('components/footer.html')

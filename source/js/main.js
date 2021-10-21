@@ -168,6 +168,12 @@
               console.log('Карты не найдены');
           }
           ymaps.ready(() => {
+              const mainMap = document.querySelector('#main-map');
+
+              if (typeof mainMap === 'undefined' || !mainMap) {
+                  return;
+              }
+
               const myMap = new ymaps.Map('main-map', {
                   center: [55.721300069007306,37.57314149999994],
                   zoom: 17,
@@ -227,6 +233,25 @@
             });
         }
 
+        const initAccordion = ($container) => {
+            const OPENED_CLASS = 'opened';
+            const $wrapper = $container.find('.js-accordion-wrapper');
+            const defaultMinHeight = $container.css('minHeight');
+
+            $container.on('click', '.js-accordion-open', () => {
+                const maxHeight = $wrapper.outerHeight();
+
+                if ($container.hasClass(OPENED_CLASS)) {
+                    $container.removeClass(OPENED_CLASS);
+                    $container.css('minHeight', defaultMinHeight);
+                    return;
+                }
+
+                $container.addClass(OPENED_CLASS);
+                $container.css('minHeight', maxHeight);
+            });
+        }
+
         const sweetAlertCssClass = {
             container: 'custom-popup__container',
             popup: 'custom-popup',
@@ -272,6 +297,7 @@
             })
         });
 
+        // Открыть поап успешной отправки формы оценки
         $(document).on('click', '.js-grade-online-open-popup', (evt) => {
             evt.preventDefault();
             const popupTemplate = $('.js-popup-applications-sends').get(0);
@@ -292,6 +318,32 @@
             })
         });
 
+        // открыть поап фильтров на мобилке
+        $(document).on('click', '.js-catalog-open-popup-filters', () => {
+            const popupTemplate = $('.js-catalog-filter-popup').get(0);
+            const parent = popupTemplate.parentNode;
+
+            if (typeof popupTemplate === 'undefined' || !popupTemplate) {
+                return;
+            }
+
+            Swal.fire({
+                backdrop: true,
+                html: popupTemplate,
+                customClass: sweetAlertCssClass,
+                padding: 0,
+                showConfirmButton: false,
+                showCloseButton: true,
+                didOpen(popup) {
+                    $(popupTemplate).addClass('active-popup');
+                },
+                didClose() {
+                    popupTemplate.classList.remove('active-popup');
+                    parent.appendChild(popupTemplate);
+                },
+            })
+        });
+
         const init = () => {
             burgerButtonPlugin();
             burgerSectionPlugin();
@@ -305,6 +357,10 @@
 
             $('.js-init-phone-mask').each((index, item) => {
                initTelephoneMask($(item));
+            });
+
+            $('.js-accordion').each((index, item) => {
+               initAccordion($(item));
             });
         }
 
