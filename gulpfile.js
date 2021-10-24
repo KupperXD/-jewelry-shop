@@ -150,7 +150,7 @@ function serverLive() {
 function pluginsJS() {
     return gulp.src(pluginsJSPaths)
         .pipe(plumber())
-        .pipe(concat('_plugins-all.min.js'))
+        .pipe(concat('plugins-all.min.js'))
         .pipe(uglify({
             compress: false,
             mangle: false
@@ -161,7 +161,7 @@ function pluginsJS() {
 function pluginsCSS() {
     return gulp.src(pluginsCSSPaths, { sourcemaps: true })
         .pipe(plumber())
-        .pipe(concat('_plugins-all.css'))
+        .pipe(concat('plugins-all.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false

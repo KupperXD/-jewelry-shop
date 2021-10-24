@@ -173,7 +173,7 @@
         margin: 0;
       }
 
-      &:not(:first-of-type) {
+      &:not(:first-child) {
         @media (max-width: $tablet-max) {
           margin: 20px 0 0;
         }
