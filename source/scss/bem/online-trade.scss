@@ -1,0 +1,82 @@
+.online-trade {
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 0 64px;
+    box-shadow: 3px 5px 16px rgba(228, 228, 228, 0.75);
+    background-color: #e8e8e8;
+
+    @media (max-width: $tablet-max) {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 -20px;
+      padding: 40px 72px 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0 -16px;
+      padding: 40px 16px 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 470px;
+    padding: 56px 0;
+    text-align: center;
+
+    @media (max-width: $tablet-max) {
+      max-width: none;
+      padding: 0;
+    }
+
+    h2 {
+      margin: 0 0 40px;
+      font-size: 30px;
+      line-height: 32px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      @media (max-width: $tablet-max) {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+
+    p {
+      margin: 16px 0;
+      font-size: 21px;
+      line-height: 24px;
+
+      @media (max-width: $tablet-max) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__picture {
+    width: 611px;
+    height: 400px;
+    margin: 0 0 0 16px;
+
+    @media (max-width: $tablet-max) {
+      width: 475px;
+      height: 364px;
+      margin: -112px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      width: 100%;
+      height: 287px;
+      margin: -64px -16px 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

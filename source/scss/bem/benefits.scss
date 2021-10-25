@@ -23,13 +23,13 @@
   &__list {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1040px;
-    margin: -32px auto;
+    margin: -32px -26px;
 
     @media (max-width: $tablet-max) {
       max-width: 546px;
+      justify-content: space-between;
       margin: -30px auto;
     }
 
@@ -40,6 +40,8 @@
     }
 
     &-wrapper {
+      display: flex;
+      justify-content: center;
       margin: 52px 0 0;
 
       @media (max-width: $tablet-max) {
@@ -51,7 +53,7 @@
   &__item {
     width: 228px;
     text-align: center;
-    margin: 32px 0;
+    margin: 32px 26px;
 
     @media (max-width: $tablet-max) {
       margin: 30px 0;

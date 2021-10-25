@@ -10,6 +10,10 @@
     background-image: url('../img/official/start-home-tablet.jpg');
   }
 
+  @media (max-width: $mobile-max) {
+    background-color: #00251e;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: flex-end;
@@ -192,6 +196,80 @@
 
     @media (max-width: $tablet-max) {
       background-image: url('../img/official/catalog-jewerly-tablet.jpg');
+    }
+  }
+
+  &--redemption-gold {
+    background-image: url('../img/official/redemption-gold-desktop.jpg');
+
+    @media (max-width: $tablet-max) {
+      background-image: url('../img/official/redemption-gold-tablet.jpg');
+    }
+
+    @media (max-width: $mobile-max) {
+      background-image: url('../img/official/redemption-gold-mobile.png');
+    }
+  }
+
+  &--redemption-handbags {
+    background-color: #1f1f1f;
+    background-image: url('../img/official/redemption-handbags-desktop.jpg');
+
+    @media (max-width: $tablet-max) {
+      background-image: url('../img/official/redemption-handbags-tablet.jpg');
+    }
+
+    @media (max-width: $mobile-max) {
+      background-image: url('../img/official/redemption-hanbags-mobile.png');
+    }
+    .start-home__wrapper {
+      padding-right: 0;
+    }
+
+    .start-home__inner {
+      max-width: 630px;
+    }
+
+    .start-home__title {
+      text-align: center;
+
+      br {
+        @media (max-width: $tablet-max) {
+          display: none;
+        }
+      }
+    }
+
+    .start-home__buttons-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 48px;
+      margin: -10px -13px;
+
+      @media (max-width: $tablet-max) {
+        display: block;
+        margin: 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        padding: 0;
+      }
+    }
+
+    .start-home__button {
+      margin: 10px 13px;
+
+      @media (max-width: $tablet-max) {
+        margin: 0;
+      }
+
+      &:not(:first-child) {
+        @media (max-width: $tablet-max) {
+          margin: 20px 0 0;
+        }
+      }
     }
   }
 
