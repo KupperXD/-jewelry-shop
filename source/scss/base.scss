@@ -64,6 +64,7 @@ p:not([class]) {
 }
 
 .btn {
+  position: relative;
   min-width: 200px;
   padding: 8px;
   height: 40px;
@@ -93,5 +94,36 @@ p:not([class]) {
 
   &:hover {
     opacity: 0.7;
+  }
+
+  &--tel {
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 21px;
+      width: 21px;
+      height: 22px;
+      fill: $white;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--way {
+    img {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      width: 19px;
+      height: 19px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--whatsapp {
+    img {
+      margin: 0 8px 0 0;
+      width: 18px;
+      height: 18px;
+    }
   }
 }

@@ -1,0 +1,16 @@
+.breadcrumbs {
+
+  &__list {
+    @media (max-width: $mobile-max) {
+      width: 240px;
+    }
+  }
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

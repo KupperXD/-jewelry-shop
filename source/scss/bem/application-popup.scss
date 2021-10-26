@@ -1,0 +1,56 @@
+.application-popup {
+  &__title {
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: $tablet-max) {
+      font-size: 18px;
+    }
+  }
+
+  &__form-wrapper {
+    margin: 32px 0 0;
+  }
+
+  &__form-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__fields {
+    width: 250px;
+  }
+
+  &__field {
+    width: 100%;
+
+    &:not(:first-of-type) {
+      margin: 12px 0 0;
+    }
+  }
+
+  &__policy {
+    max-width: 320px;
+    margin: 24px 0 0;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    @media (max-width: $tablet-max) {
+      max-width: 260px;
+      margin: 32px 0 0;
+    }
+  }
+
+  &__submit {
+    margin: 32px auto 0;
+
+    @media (max-width: $tablet-max) {
+      margin-top: 24px;
+    }
+  }
+}

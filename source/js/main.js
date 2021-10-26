@@ -252,6 +252,7 @@
             });
         }
 
+
         const sweetAlertCssClass = {
             container: 'custom-popup__container',
             popup: 'custom-popup',
@@ -342,6 +343,56 @@
                     parent.appendChild(popupTemplate);
                 },
             })
+        });
+
+        $(document).on('click', '.js-open-application-popup', (evt) => {
+            evt.preventDefault();
+            const popupTemplate = $('.js-application-popup').get(0);
+
+            if (typeof popupTemplate === 'undefined' || !popupTemplate) {
+                return;
+            }
+
+            const cloneTemplate = popupTemplate.cloneNode(true);
+            const phoneInput = $(cloneTemplate).find('.js-phone-mask').get(0);
+
+            IMask(phoneInput, {
+                mask: '+7 (000) 000-00-00',
+            });
+
+            Swal.fire({
+                backdrop: true,
+                html: cloneTemplate,
+                customClass: sweetAlertCssClass,
+                padding: 0,
+                showConfirmButton: false,
+                showCloseButton: true,
+            })
+        });
+
+        const scollToElement = (element) => {
+            if (!element) {
+                return;
+            }
+
+            const offsetTop = element.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+               top: offsetTop - 100,
+                behavior: 'smooth',
+            });
+
+        }
+
+        $(document).on('click', '.js-scroll-to-contact-block', (evt) => {
+            const $contactSection = $('.js-contact-section');
+
+            if (!$contactSection.length) {
+                return true;
+            }
+
+            evt.preventDefault();
+            scollToElement($contactSection.get(0));
         });
 
         const init = () => {
