@@ -12,5 +12,11 @@
   &__link {
     font-size: 12px;
     line-height: 14px;
+    color: $main-text-color;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
