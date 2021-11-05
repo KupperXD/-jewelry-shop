@@ -19,7 +19,7 @@
 .all {
   margin-top: -75px;
   flex-grow: 1;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @media (max-width: $mobile-max) {
     margin-top: -70px;
