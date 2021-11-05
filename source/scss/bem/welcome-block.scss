@@ -21,4 +21,10 @@
     margin: 20px auto 32px;
     background-color: $green;
   }
+
+  &--without-separator {
+    .welcome-block__desc {
+      margin: 24px 0;
+    }
+  }
 }

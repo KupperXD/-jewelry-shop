@@ -1,0 +1,390 @@
+@@include('components/head.html')
+<div style="display: none;">
+    @@include('../dist/img/svg/sprite.svg')
+</div>
+@@include('components/header.html')
+    <div class="all">
+        <main class="redemption-page">
+            <div class="start-home redemption-page__start-home start-home--antiques">
+                <div class="start-home__bg">
+                    <picture>
+                        <source srcset="img/official/redemption_antiques_mobile.png" media="(max-width: 767px)">
+                        <source srcset="img/official/redemption_antiques_tablet.png" media="(max-width: 1279px)">
+                        <img alt src="img/official/redemption_antiques_desktop.png"/>
+                    </picture>
+                </div>
+                <div class="container container--content">
+                    <div class="start-home__wrapper">
+                        <div class="start-home__inner">
+                            <h1 class="start-home__title">
+                                Выкуп<br>
+                                антиквариата
+                            </h1>
+                            <p class="start-home__desc">
+                                Выкупаем старинные вещи, фарфор, иконы,
+                                картины известных художников
+                            </p>
+                            <div class="start-home__buttons-row">
+                                <button class="start-home__button start-home__button--way btn btn--with-icon" type="button">
+                                    <img src="img/official/yandex_icon.png" width="20" height="20" alt="">
+                                    Проложить маршрут
+                                </button>
+                                <a href="tel:88006002981" class="start-home__button start-home__button--tel btn btn--with-icon" type="button">
+                                    <svg>
+                                        <use xlink:href="#ic_tel"></use>
+                                    </svg>
+                                    Позвоните нам
+                                </a>
+                                <a href="#" class="start-home__button start-home__button--whatsapp btn btn--with-icon">
+                                    <img src="img/official/whatsapp_icon.png" width="18" height="18" alt="">
+                                    Написать в WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redemption-page__welcome-block welcome-block">
+                <div class="container container--content">
+                    <div class="welcome-block__wrapper">
+                        <h2 class="welcome-block__title">
+                            Как выгодно продать антиквариат в Москве
+                        </h2>
+                        <span class="welcome-block__separator"></span>
+                        <p class="welcome-block__desc">
+                            В&nbsp;ювелирном доме &laquo;На&nbsp;Фрунзенской&raquo;
+                            вы&nbsp;можете продать различные предметы старины и&nbsp;произведения
+                            искусства: картины, гравюры, литографии, скульптуры и&nbsp;статуэтки,
+                            антикварные предметы интерьера, часы, фарфоровую посуду,
+                            столовые серебряные приборы, старинные иконы, книги, золотые монеты.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="redemption-page__benefits benefits benefits--redemption">
+                <svg class="benefits__big-logo">
+                    <use xlink:href="#ic_big_logo"></use>
+                </svg>
+                <div class="container container--content">
+                    <div class="benefits__wrapper">
+                        <h2 class="benefits__title">
+                            наши преимущества
+                        </h2>
+                        <div class="benefits__list-wrapper">
+                            <ul class="benefits__list">
+                                <li class="benefits__item">
+                                    <div class="benefits__picture">
+                                        <img src="img/official/benefit_quality.png" width="90" height="90" alt="">
+                                    </div>
+                                    <p class="benefits__item-title">
+                                        Экспертиза бесплатно
+                                    </p>
+                                    <p class="benefits__item-desc">
+                                        Штатный специалист выполнит проверку на подлинность и выдаст экспертное заключение бесплатно.
+                                    </p>
+                                </li>
+                                <li class="benefits__item">
+                                    <div class="benefits__picture">
+                                        <img src="img/official/benefits_tax.png" width="74" height="78" alt="">
+                                    </div>
+                                    <p class="benefits__item-title">
+                                        Высокая цена за изделие
+                                    </p>
+                                    <p class="benefits__item-desc">
+                                        Наши эксперты разбираются в антиквариате, поэтому всегда называют реальную стоимость выкупа.
+                                    </p>
+                                </li>
+                                <li class="benefits__item">
+                                    <div class="benefits__picture">
+                                        <img src="img/official/benefits_urgent.png" width="85" height="47" alt="">
+                                    </div>
+                                    <p class="benefits__item-title">Деньги на 20 минут</p>
+                                    <p class="benefits__item-desc">
+                                        15-20 минут на экспертизу предмета старины, и вы уходите с наличными в любой, удобной для вас валюте.
+                                    </p>
+                                </li>
+                                <li class="benefits__item">
+                                    <div class="benefits__picture">
+                                        <img src="img/official/benefit_parking.png" width="61" height="61" alt="">
+                                    </div>
+                                    <p class="benefits__item-title">Бесплатная парковка</p>
+                                    <p class="benefits__item-desc">Оставляйте машину перед офисом и приходите к нам. Места на парковке всегда есть.</p>
+                                </li>
+                                <li class="benefits__item">
+                                    <div class="benefits__picture">
+                                        <img src="img/official/benefits_car.png" width="85" height="49" alt="">
+                                    </div>
+                                    <p class="benefits__item-title">Выездная оценка</p>
+                                    <p class="benefits__item-desc">Наш эксперт может приехать к вам в офис, домой и провести оценку предмета на месте.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redemption-page__lombards-block lombards-block green-block-with-logo">
+                <div class="green-block-with-logo__decor">
+                    <svg>
+                        <use xlink:href="#ic_big_logo"></use>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="lombards-block__wrapper green-block-with-logo__wrapper">
+                        <h2 class="green-block-with-logo__title">
+                            С чем столкнетесь в столичных ломбардах
+                        </h2>
+                        <p class="green-block-with-logo__desc lombards-block__desc">
+                            Чтобы продать любую антикварную вещь от&nbsp;статуэтки до&nbsp;каминных часов, вам нужно получить экспертное заключение. В&nbsp;чем специалист укажет подлинность изделия и&nbsp;стоимость.
+                            У&nbsp;обычных ломбардов нет оценщиков, которые разбираются в&nbsp;антиквариате. Поэтому вам придется:
+                        </p>
+                        <div class="green-block-with-logo__content dangerous-list">
+                            <ul class="dangerous-list__wrapper">
+                                <li class="dangerous-list__item">
+                                    <span class="dangerous-list__icon"></span>
+                                    <p class="dangerous-list__text">
+                                        Записаться в музей, галерею
+                                        на экспертизу
+                                    </p>
+                                </li>
+                                <li class="dangerous-list__item">
+                                    <span class="dangerous-list__icon"></span>
+                                    <p class="dangerous-list__text">
+                                        Оплатить около 1000$
+                                        за услугу
+                                    </p>
+                                </li>
+                                <li class="dangerous-list__item">
+                                    <span class="dangerous-list__icon"></span>
+                                    <p class="dangerous-list__text">
+                                        Отдать на 1-2 месяца в чужие руки ваше изделие и ждать заключения эксперта
+                                    </p>
+                                </li>
+                                <li class="dangerous-list__item">
+                                    <span class="dangerous-list__icon dangerous-list__icon--warning"></span>
+                                    <p class="dangerous-list__text">
+                                        И только после этого вы можете ехать в ломбард, чтобы продать предмет старины.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redemption-page__way-sale way-sale">
+                <div class="container container--content">
+                    <div class="way-sale__wrapper">
+                        <h2 class="way-sale__title">
+                            Как происходит экспертиза и&nbsp;выкуп антиквариата у&nbsp;нас?
+                        </h2>
+                        <p class="way-sale__desc">
+                            Ювелирный дом &laquo;На&nbsp;Фрунзенской&raquo; проводит экспертизу и&nbsp;выкупает различные предметы старины, а&nbsp;также произведения искусства. Штатные эксперты выполняют проверку изделия на&nbsp;подлинность бесплатно в&nbsp;течение 15&nbsp;минут. В&nbsp;большинстве случаев предлагаем цену выкупа в&nbsp;1,5-2&nbsp;больше, чем другие.
+                        </p>
+                        <div class="way-sale__list-wrapper">
+                            <ul class="way-sale__list">
+                                <li class="way-sale__list-item">
+                                    <span class="way-sale__step">01.</span>
+                                    <img alt src="img/official/right-arrow.png" width="38" height="20" class="way-sale__arrow">
+                                    <span class="way-sale__item-title">
+                                        Встреча
+                                    </span>
+                                    <p class="way-sale__item-desc">
+                                        Вы приезжаете к нам в офис или приглашаете эксперта к себе.
+                                    </p>
+                                </li>
+                                <li class="way-sale__list-item">
+                                    <span class="way-sale__step">02.</span>
+                                    <img alt src="img/official/right-arrow.png" width="38" height="20" class="way-sale__arrow">
+                                    <span class="way-sale__item-title">
+                                        Оценка
+                                    </span>
+                                    <p class="way-sale__item-desc">
+                                        Эксперты оценивают изделие при вас в течение 10-15 минут.
+                                    </p>
+                                </li>
+                                <li class="way-sale__list-item">
+                                    <span class="way-sale__step">03.</span>
+                                    <img alt src="img/official/right-arrow.png" width="38" height="20" class="way-sale__arrow">
+                                    <span class="way-sale__item-title">
+                                        Сделка
+                                    </span>
+                                    <p class="way-sale__item-desc">
+                                        Наличные до 100 000 000 рублей вы получаете в нужной вам валюте.
+                                    </p>
+                                </li>
+                                <li class="way-sale__list-item">
+                                    <span class="way-sale__step">04.</span>
+                                    <span class="way-sale__item-title">
+                                        Анонимность
+                                    </span>
+                                    <p class="way-sale__item-desc">
+                                        Мы гарантируем тайну сделки и полную конфиденциальность.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redemption-page__history history-main">
+                <div class="container">
+                    <div class="history-main__wrapper">
+                        <svg class="history-main__logo">
+                            <use xlink:href="#ic_logo_header"></use>
+                        </svg>
+                        <div class="history-main__content">
+                            <p>
+                                Ювелирный дом выкупает предметы старины,
+                                а&nbsp;также предметы искусства известных мастеров.
+                                Уже много лет мы&nbsp;сотрудничаем напрямую с&nbsp;Третьяковской
+                                галереей, Всероссийским научно-реставрационным центром&nbsp;им.
+                                И.Э. Грабаря, музеем&nbsp;им. А.С. Пушкина,
+                                Государственным историческим музеем.
+                            </p>
+                            <p>
+                                Вам не&nbsp;придется ждать 2-3&nbsp;месяца, чтобы продать вещь.
+                                Наши эксперты в&nbsp;течение 10-15 минут установят подлинность
+                                изделия и&nbsp;назовут реальную цену. Сертификаты и&nbsp;заключения
+                                не&nbsp;нужны. При необходимости специалист проведет выездную оценку у&nbsp;вас
+                                дома или в&nbsp;офисе. Только назначьте день и&nbsp;время.
+                            </p>
+                            <p>
+                                Наличные до&nbsp;100&nbsp;000&nbsp;000 рублей вы&nbsp;получаете сразу после оценки
+                                в&nbsp;любой удобной валюте. Гарантируем конфиденциальность и&nbsp;безопасность сделки.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redemption-page__grade-online green-block-with-logo grade-online">
+                <div class="green-block-with-logo__decor">
+                    <svg>
+                        <use xlink:href="#ic_big_logo"></use>
+                    </svg>
+                </div>
+                <div class="container container--content">
+                    <div class="green-block-with-logo__wrapper">
+                        <h2 class="green-block-with-logo__title">онлайн-оценка</h2>
+                        <p class="green-block-with-logo__desc">Оставьте заявку на оценку ваших изделий и наш специалист свяжется с вами в ближайшее время</p>
+                        <div class="green-block-with-logo__content">
+                            <div class="grade-online__form-wrapper">
+                                <form>
+                                    <div class="grade-online__form-grid">
+                                        <div class="grade-online__form-grid-item">
+                                            <div class="form-field form-field--white">
+                                                <label class="form-field__inner">
+                                                    <input placeholder="Ваше имя*" name="name" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="grade-online__form-grid-item">
+                                            <div class="form-field form-field--white">
+                                                <label class="form-field__inner">
+                                                    <input class="js-init-phone-mask" placeholder="+7 (___) ___-__-__*" name="phone" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="grade-online__form-grid-item">
+                                            <div class="form-field form-field--white">
+                                                <label class="form-field__inner">
+                                                    <input placeholder="Ваше email*" name="email" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="grade-online__form-grid-item grade-online__form-grid-item--comments">
+                                            <div class="form-textarea form-textarea--white">
+                                                <div class="form-textarea__inner">
+                                                    <textarea name="comments" placeholder="Описание товара" ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grade-online__form-grid-item grade-online__form-grid-item--mobile-gap">
+                                            <div class="grade-online__form-file download-file js-download-file">
+                                                <label for="photo-product" class="download-file__inner">
+                                                    <img class="download-file__icon" src="img/official/add-button.png" width="28" height="28" alt="">
+                                                    <span class="download-file__text js-download-file-text">
+                                                        Загрузить фото или файл
+                                                    </span>
+                                                    <button class="download-file__delete js-delete-file" type="button"></button>
+                                                </label>
+                                                <input id="photo-product" name="photo-product" type="file" class="visually-hidden">
+                                            </div>
+                                        </div>
+                                        <div class="grade-online__form-grid-item">
+                                            <div class="grade-online__captcha">
+                                                <img src="img/official/captcha.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="grade-online__submit btn js-grade-online-open-popup" type="submit">
+                                        Отправить заявку
+                                    </button>
+                                    <p class="grade-online__policy-text">
+                                        Нажимая кнопку “Отправить” вы соглашаетесь на обработку персональных данных
+                                        в соответствии с Политикой конфиденциальности
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="redemption-page__maps maps-main js-contact-section">
+                <div class="container">
+                    <div class="maps-main__wrapper">
+                        <div id="main-map" class="maps-main__maps js-main-page-map">
+
+                        </div>
+                        <div class="maps-main__content">
+                            <a href="tel:88006002981" class="maps-main__text-with-link">
+                                <svg>
+                                    <use xlink:href="#ic_tel"></use>
+                                </svg>
+                                <span>
+                                    8 (800) 600-29-81
+                                </span>
+                            </a>
+                            <p class="maps-main__text-with-link maps-main__text-with-link--small">
+                                <svg>
+                                    <use xlink:href="#ic_address"></use>
+                                </svg>
+                                <span>Комсомольский проспект дом 42 строение 1</span>
+                            </p>
+                            <p class="maps-main__text-with-link">
+                                <svg>
+                                    <use xlink:href="#ic_time"></use>
+                                </svg>
+                                <span>Режим работы: 09:00-21:00 без выходных.<br>
+                                Для согласования более позднего времени визита,
+                                пожалуйста, записывайтесь заранее.</span>
+                            </p>
+                            <div class="maps-main__buttons-list">
+                                <a class="maps-main__button btn btn--small btn--black">
+                                    <img src="img/official/yandex_icon.png" width="20" height="20" alt="">
+                                    Проложить маршрут
+                                </a>
+                                <a class="maps-main__button maps-main__button--taxi btn btn--small btn--black">
+                                    <img src="img/official/yandex_taxi.png" width="19" height="19" alt="">
+                                    Вызвать яндекс такси
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+<div class="hidden">
+    <div class="popup-applications-sends js-popup-applications-sends">
+        <h2 class="popup-applications-sends__title">
+            ваша заявка отправлена
+        </h2>
+        <p class="popup-applications-sends__text">
+            Благодарим вас за&nbsp;обращение,
+            вближайшее время мы&nbsp;свяжемся с&nbsp;вами.
+        </p>
+        <a href="/" class="popup-applications-sends__link btn btn--black">
+            Вернутся на главную
+        </a>
+    </div>
+</div>
+@@include('components/footer.html')

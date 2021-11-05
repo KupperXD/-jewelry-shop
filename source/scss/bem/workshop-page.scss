@@ -1,0 +1,165 @@
+.workshop-page {
+  padding-bottom: 56px;
+
+  @media (max-width: $tablet-max) {
+    padding-bottom: 24px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 32px;
+  }
+
+  &__welcome-block {
+    margin: 72px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 52px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__benefits {
+    margin: 110px 0 0;
+    padding: 0 0 116px;
+
+    @media (max-width: $tablet-max) {
+      margin: 72px 0 0;
+      padding: 0 0 48px;
+    }
+  }
+
+  &__way-sale {
+    margin: 76px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 40px 0 0;
+    }
+
+    &--gold {
+      margin: 0;
+    }
+  }
+
+  &__history {
+    margin: 104px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 52px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__maps {
+    margin: 66px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 24px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0;
+    }
+  }
+
+  &__grade-online {
+    margin: 52px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 32px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0;
+    }
+  }
+
+  &__trade-online {
+    margin: 72px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 56px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 64px 0 0;
+    }
+  }
+
+  &__restoration {
+    margin: 100px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 48px 0 0;
+    }
+  }
+
+  &__repair {
+    @media (max-width: $tablet-max) {
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0;
+    }
+  }
+
+  &__info-block {
+    margin: 120px 0 0;
+    overflow: hidden;
+
+    @media (max-width: $tablet-max) {
+      margin: 56px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0 0;
+    }
+
+    .info-block__wrapper {
+      @media (max-width: $tablet-max) {
+        height: auto;
+        padding-bottom: 0;
+        margin: 0 -16px;
+      }
+    }
+
+    .info-block__title {
+      br {
+        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+          display: none;
+        }
+      }
+    }
+
+    .info-block__content {
+      @media (max-width: $tablet-max) {
+        max-width: 630px;
+        margin: 0 auto;
+      }
+    }
+
+    .info-block__picture {
+      @media (max-width: $tablet-max) {
+        width: 684px;
+        height: 329px;
+        margin: 0 auto;
+        position: static;
+      }
+
+      @media (max-width: $mobile-max) {
+        width: 322px;
+        height: 277px;
+      }
+    }
+  }
+}
