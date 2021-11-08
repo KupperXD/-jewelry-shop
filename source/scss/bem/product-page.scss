@@ -37,6 +37,7 @@
   &__main-wrapper {
     position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     z-index: 5;
 
@@ -45,43 +46,183 @@
     }
   }
 
+  &__main-sliders {
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: $mobile-max) {
+      width: 291px;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+  }
+
+  &__slider {
+
+    &-button {
+      width: 13px;
+      height: 23px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: none;
+      transition: opacity 0.3s ease-in-out;
+      &::after {
+        content: none;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: $main-text-color;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &.next {
+        transform: rotate(180deg);
+        transform-origin: center;
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+      width: 490px;
+      height: 490px;
+
+      @media (max-width: $mobile-max) {
+        width: 291px;
+        height: 291px;
+      }
+    }
+
+    &-item,
+    &-item-inner {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-item {
+      background-color: #f9f7f8;
+    }
+
+    &-item-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-thumbs {
+      width: 69px;
+      height: 490px;
+      margin: 0 32px 0 0;
+      order: -1;
+
+      @media (max-width: $mobile-max) {
+        width: 100%;
+        height: 69px;
+        margin: 12px 0 0;
+        order: inherit;
+      }
+    }
+  }
+
+  &__thumbs-wrapper {
+    height: 490px;
+
+    @media (max-width: $mobile-max) {
+      height: 69px;
+    }
+  }
+
+  &__thumbs-slide {
+    position: relative;
+    width: 69px;
+    height: 69px !important;
+    padding: 2px;
+    background-color: #f9f7f8;
+    border: 1px solid #f9f7f8;
+    overflow: hidden;
+
+    &.swiper-slide-thumb-active {
+      border: 1px solid $main-text-color
+    }
+
+    &.has-video {
+      &::before {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #252525;
+        opacity: 0.26;
+      }
+
+      &::after {
+        content: '';
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-image: url('../img/official/play-button.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__thumbs-slide-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
   &__main-info {
     width: 470px;
-    margin: 0 0 0 110px;
+    margin: 0;
+    flex-shrink: 0;
     padding: 16px 0 0;
 
     @media (max-width: $tablet-max) {
       width: 100%;
       margin: 56px 0 0;
       padding: 0;
-    }
-  }
-
-  &__main-picture {
-    width: 490px;
-    height: 490px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    background-color: #f9f7f8;
-
-    @media (max-width: $tablet-max) {
-      margin: 0 auto;
-    }
-
-    @media (max-width: $mobile-max) {
-      width: 290px;
-      height: 290px;
-    }
-
-    img {
-      width: auto;
-      height: auto;
-      max-height: 100%;
-      object-fit: contain;
-      object-position: center;
     }
   }
 
