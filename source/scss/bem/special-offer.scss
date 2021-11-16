@@ -1,0 +1,85 @@
+.special-offer {
+  font-size: 18px;
+  line-height: 21px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .container {
+    @media (max-width: $tablet-max) {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    min-height: 482px;
+    padding: 56px 60px;
+    box-shadow: 3px 5px 16px rgba(228, 228, 228, 0.75);
+    background-color: #eaebef;
+    background-image: url('../img/official/special-offer/special-offer-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+
+    @media (max-width: $tablet-max) {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 42px 72px;
+      background-image: url('../img/official/special-offer/special-offer-tablet.jpg');
+    }
+
+    @media (max-width: $mobile-max) {
+      max-width: 320px;
+      min-height: 726px;
+      padding: 42px 16px;
+      background-image: url('../img/official/special-offer/special-offer-mobile.jpg');
+      background-position: center bottom;
+      background-size: contain;
+    }
+  }
+
+  &__content {
+    max-width: 486px;
+    text-align: left;
+
+    @media (max-width: $tablet-max) {
+      max-width: none;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media (max-width: $tablet-max) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__desc {
+    margin: 32px 0 0;
+  }
+
+  &__steps {
+    margin: 48px 0 0;
+
+    @media (max-width: $tablet-max) {
+      max-width: 320px;
+      text-align: left;
+    }
+  }
+
+  &__step {
+    span {
+      font-weight: 700;
+    }
+  }
+
+}

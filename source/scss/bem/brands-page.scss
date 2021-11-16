@@ -1,4 +1,4 @@
-.workshop-page {
+.brands-page {
   padding-bottom: 56px;
 
   @media (max-width: $tablet-max) {
@@ -55,33 +55,6 @@
     }
   }
 
-  &__specials {
-    position: relative;
-    margin: 64px 0 0;
-
-    @media (max-width: $tablet-max) {
-      margin: 0;
-    }
-  }
-
-  &__additional {
-    @media (max-width: $tablet-max) {
-      margin: 40px 0 0;
-    }
-  }
-
-  &__lombards {
-    margin: 100px 0 0;
-
-    @media (max-width: $tablet-max) {
-      margin: 88px 0 0;
-    }
-
-    @media (max-width: $mobile-max) {
-      margin: 48px 0 0;
-    }
-  }
-
   &__maps {
     margin: 66px 0 0;
 
@@ -130,63 +103,15 @@
     }
   }
 
-  &__repair {
+  &__brands-history {
+    margin: 88px 0 0;
+
     @media (max-width: $tablet-max) {
-      margin: 40px 0 0;
+      margin: 64px 0 0;
     }
 
     @media (max-width: $mobile-max) {
-      margin: 0;
-    }
-  }
-
-  &__info-block {
-    margin: 120px 0 0;
-    overflow: hidden;
-
-    @media (max-width: $tablet-max) {
-      margin: 56px 0 0;
-    }
-
-    @media (max-width: $mobile-max) {
-      margin: 40px 0 0;
-    }
-
-    .info-block__wrapper {
-      @media (max-width: $tablet-max) {
-        height: auto;
-        padding-bottom: 0;
-        margin: 0 -16px;
-      }
-    }
-
-    .info-block__title {
-      br {
-        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-          display: none;
-        }
-      }
-    }
-
-    .info-block__content {
-      @media (max-width: $tablet-max) {
-        max-width: 630px;
-        margin: 0 auto;
-      }
-    }
-
-    .info-block__picture {
-      @media (max-width: $tablet-max) {
-        width: 684px;
-        height: 329px;
-        margin: 0 auto;
-        position: static;
-      }
-
-      @media (max-width: $mobile-max) {
-        width: 322px;
-        height: 277px;
-      }
+      margin: 48px 0 0;
     }
   }
 }

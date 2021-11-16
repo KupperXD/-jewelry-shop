@@ -79,4 +79,25 @@
         margin: 12px 0 0;
       }
     }
+
+  &--jewerly {
+    .repair-service__list-wrapper {
+      max-width: none;
+
+      @media (max-width: $tablet-max) {
+        max-width: 650px;
+      }
+    }
+    .repair-service__item {
+      width: 220px;
+
+      @media (max-width: $tablet-max) {
+        width: calc(50% - 52px);
+      }
+
+      @media (max-width: $mobile-max) {
+        width: 100%;
+      }
+    }
+  }
 }
