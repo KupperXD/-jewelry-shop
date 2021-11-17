@@ -59,11 +59,11 @@
     margin: 66px 0 0;
 
     @media (max-width: $tablet-max) {
-      margin: 24px 0 0;
+      margin: 72px 0 0;
     }
 
     @media (max-width: $mobile-max) {
-      margin: 0;
+      margin: 64px 0 0;
     }
   }
 
@@ -112,6 +112,14 @@
 
     @media (max-width: $mobile-max) {
       margin: 48px 0 0;
+    }
+  }
+
+  &__gallery {
+    margin: 120px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 64px 0 0;
     }
   }
 }
