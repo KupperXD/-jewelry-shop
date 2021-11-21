@@ -370,6 +370,34 @@
             })
         });
 
+        $(document).on('click', '.js-open-popup-more-photo', (evt) => {
+            evt.preventDefault();
+            const popupTemplate = $('.js-popup-more-photo').get(0);
+            const parent = popupTemplate.parentNode;
+
+            if (typeof popupTemplate === 'undefined' || !popupTemplate) {
+                return;
+            }
+
+            const phoneInput = $(popupTemplate).find('.js-phone-mask').get(0);
+
+            IMask(phoneInput, {
+                mask: '+7 (000) 000-00-00',
+            });
+
+            Swal.fire({
+                backdrop: true,
+                html: popupTemplate,
+                customClass: sweetAlertCssClass,
+                padding: 0,
+                showConfirmButton: false,
+                showCloseButton: true,
+                didClose: () => {
+                    parent.appendChild(popupTemplate);
+                },
+            });
+        });
+
         const scollToElement = (element) => {
             if (!element) {
                 return;

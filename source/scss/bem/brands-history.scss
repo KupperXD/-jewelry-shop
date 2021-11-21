@@ -77,4 +77,19 @@
       }
     }
   }
+
+  &--cleef {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 541px;
+        height: 81px;
+        margin: 0 64px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 265px;
+        height: 40px;
+      }
+    }
+  }
 }

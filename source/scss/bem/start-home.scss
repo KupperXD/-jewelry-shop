@@ -257,4 +257,45 @@
     }
   }
 
+  &--vancleef-brand {
+    @media (min-width: $desktop-sm-min) {
+      color: $main-text-color;
+    }
+
+    .start-home__wrapper {
+      @media (min-width: $desktop-sm-min) {
+        padding-top: 80px;
+      }
+    }
+
+    .start-home__button {
+      @media (min-width: $desktop-sm-min) {
+        border-color: $main-text-color;
+        color: $main-text-color;
+      }
+
+      img {
+        &.only-desktop {
+          @media (max-width: $tablet-max) {
+            display: none;
+          }
+        }
+
+        &.only-tablet {
+          @media (min-width: $desktop-sm-min) {
+            display: none;
+          }
+        }
+      }
+
+      &--tel {
+        svg {
+          @media (min-width: $desktop-sm-min) {
+            fill: $main-text-color;
+          }
+        }
+      }
+    }
+  }
+
 }

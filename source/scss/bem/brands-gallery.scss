@@ -10,7 +10,7 @@
   }
 
   &__title {
-    max-width: 570px;
+    max-width: 720px;
     margin: 0 auto;
     font-size: 30px;
     line-height: 35px;
@@ -47,7 +47,7 @@
   }
 
   &__picture {
-
+    flex-shrink: 0;
     @media (max-width: $mobile-max) {
       margin: 0 auto;
     }
@@ -64,10 +64,12 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 48px 0 0;
+    z-index: 5;
 
     @media (max-width: $tablet-max) {
       margin: 32px 0 0;
@@ -83,6 +85,7 @@
       width: 460px;
       font-size: 18px;
       line-height: 21px;
+      flex-shrink: 0;
 
       @media (max-width: $tablet-max) {
         width: 312px;
@@ -257,6 +260,201 @@
           @media (max-width: $mobile-max) {
             transform: none;
           }
+        }
+      }
+    }
+  }
+
+  &--chopard {
+    .brands-gallery__item {
+
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 354px;
+            height: 322px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin: -64px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -90px 0 0;
+        }
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 242px;
+            height: 323px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin: -80px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -110px 0 0;
+        }
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 309px;
+            height: 309px;
+          }
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        @media (max-width: $mobile-max) {
+          margin: 24px 0 0;
+        }
+      }
+    }
+
+    .brands-gallery__list {
+      @media (max-width: $tablet-max) {
+        margin: 16px 0 0;
+      }
+    }
+  }
+
+  &--bvlgari {
+    .brands-gallery__item {
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 202px;
+            height: 182px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 256px;
+            height: 270px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin: 0;
+
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 149px;
+            height: 185px;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        margin: 52px 0 0;
+
+
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 160px;
+            height: 165px;
+          }
+        }
+      }
+    }
+
+    .brands-gallery__list {
+      margin: 72px 0 0;
+
+      @media (max-width: $tablet-max) {
+        margin: 48px 0 0;
+      }
+    }
+  }
+
+  &--vancleef {
+    .brands-gallery__item {
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 190px;
+            height: 253px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin: -64px 0 0;
+        transform: translateX(-72px);
+
+        @media (max-width: $tablet-max) {
+          margin: -48px 0 0;
+          transform: none;
+        }
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 315px;
+            height: 250px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin: -64px 0 0;
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 157px;
+            height: 253px;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 291px;
+            height: 262px;
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        margin: -64px 0 0;
+
+        .brands-gallery__picture {
+          @media (max-width: $tablet-max) {
+            width: 356px;
+            height: 259px;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 314px;
+            height: 269px;
+          }
+        }
+      }
+
+      &:not(:first-of-type) {
+        @media (max-width: $mobile-max) {
+          margin: 40px 0 0;
         }
       }
     }
