@@ -298,4 +298,26 @@
     }
   }
 
+  &--choose-ring {
+    .start-home__wrapper {
+      @media (min-width: $desktop-sm-min) {
+        padding-top: 112px;
+      }
+    }
+
+    .start-home__buttons-row {
+      margin: 24px 0 0;
+
+      @media (max-width: $mobile-max) {
+        margin: 48px 0 0;
+      }
+    }
+
+    .start-home__title {
+      @media (max-width: $tablet-max) {
+        max-width: 400px;
+      }
+    }
+  }
+
 }

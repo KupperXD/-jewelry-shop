@@ -1,0 +1,51 @@
+.choose-ring {
+  padding-bottom: 56px;
+
+  @media (max-width: $tablet-max) {
+    padding-bottom: 24px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 32px;
+  }
+
+  &__welcome-block {
+    margin: 72px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 52px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__maps {
+    margin: 66px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 72px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 64px 0 0;
+    }
+  }
+
+  &__gallery {
+    margin: 120px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 64px 0 0;
+    }
+  }
+
+  &__steps {
+    margin: 68px 0 0;
+
+    @media (max-width: $mobile-max) {
+      margin: 80px 0 0;
+    }
+  }
+}
