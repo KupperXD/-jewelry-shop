@@ -1,0 +1,126 @@
+.new-year {
+  &__wrapper {
+    padding: 22px;
+    background-image: linear-gradient(28deg, #daaf53 0%, #d19e4d 40%, #fff9b1 73%, #f1d37d 100%);
+    height: 440px;
+    color: $white;
+
+    @media (max-width: $tablet-max) {
+      height: 280px;
+      padding: 14px;
+    }
+
+    @media (max-width: $mobile-max) {
+      max-width: 320px;
+      margin: 0 auto;
+      height: 550px;
+      padding: 10px;
+    }
+
+  }
+
+  &__content {
+    height: 100%;
+    position: relative;
+    padding: 60px 40px 24px 40px;
+    box-shadow: 3px 5px 16px rgba(210, 163, 81, 0.75);
+    background-color: #010100;
+
+    @media (max-width: $tablet-max) {
+      padding: 24px;
+    }
+
+    @media (max-width: $mobile-max) {
+      padding: 24px 12px;
+    }
+  }
+
+  &__grid {
+    max-width: 460px;
+
+    @media (max-width: $tablet-max) {
+      max-width: 270px;
+    }
+
+    @media (max-width: $mobile-max) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 679px;
+
+    @media (max-width: $tablet-max) {
+      width: 325px;
+    }
+
+    @media (max-width: $mobile-max) {
+      bottom: 0;
+      top: auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 314px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right center;
+
+      @media (max-width: $tablet-max) {
+        object-fit: contain;
+        object-position: right bottom;
+      }
+
+      @media (max-width: $mobile-max) {
+        object-fit: cover;
+        object-position: center bottom;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media (max-width: $tablet-max) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__desc {
+    margin: 38px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 24px 0 0;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 24px;
+
+      @media (max-width: $tablet-max) {
+        font-size: 13px;
+        line-height: 18px;
+      }
+
+      &:not(:first-child) {
+        margin: 16px 0 0;
+      }
+    }
+  }
+}

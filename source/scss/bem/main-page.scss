@@ -96,4 +96,28 @@
       margin: 0;
     }
   }
+
+  &__new-year {
+    margin: 64px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 48px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0 0;
+    }
+  }
+
+  &__video {
+    margin: 88px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 28px 0 0;
+    }
+  }
 }
