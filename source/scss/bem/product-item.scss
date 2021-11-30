@@ -31,6 +31,35 @@
     }
   }
 
+  &__badge {
+    max-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 24px;
+    border-radius: 0 12px 0 12px;
+    background-color: #f1462a;
+
+    @media (max-width: $tablet-max) {
+      padding: 6px 12px;
+      border-radius: 0 8px 0 8px;
+    }
+
+      &-text {
+        font-size: 16px;
+        line-height: 18px;
+        color: #f3f3f3;
+
+        @media (max-width: $tablet-max) {
+          font-size: 10px;
+          line-height: 1;
+        }
+      }
+  }
+
   &__picture {
     display: flex;
     align-items: center;
@@ -91,7 +120,7 @@
     font-weight: 700;
 
     @media (max-width: $tablet-max) {
-      margin: 16px 0 0;
+      margin: 8px 0 0;
       font-size: 12px;
       line-height: 14px;
     }
@@ -108,9 +137,64 @@
       height: 25px;
       min-width: 116px;
       padding: 2px;
-      margin: 20px 0 0;
+      margin: auto 0 0;
       font-size: 10px;
       line-height: 12px;
+    }
+  }
+
+  &__price-inner {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    @media (max-width: $tablet-max) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 40px;
+    }
+
+    &.has-old {
+      .product-item__price {
+        margin-left: 15px;
+
+        @media (max-width: $tablet-max) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &__price-old {
+    position: relative;
+    margin-right: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #a8a8a8;
+
+    @media (max-width: $tablet-max) {
+      margin: 6px 0 0 0;
+      font-size: 12px;
+      line-height: 1;
+      order: 1;
+    }
+
+    &::before {
+      content: '';
+      height: 1px;
+      width: calc(100% + 14px);
+      position: absolute;
+      top: 50%;
+      left: -7px;
+      transform: translateY(-50%);
+      background: #232323;
+
+      @media (max-width: $tablet-max) {
+        width: calc(100% + 10px);
+        left: -5px;
+      }
     }
   }
 }
