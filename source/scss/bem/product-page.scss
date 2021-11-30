@@ -243,14 +243,9 @@
 
   &__price {
     display: block;
-    margin: 20px 0 0;
     font-weight: 700;
     font-size: 21px;
     line-height: 24px;
-
-    @media (max-width: $mobile-max) {
-      margin: 24px 0 0;
-    }
   }
 
   &__application {
@@ -363,6 +358,65 @@
 
     &:hover {
       opacity: 0.7;
+    }
+  }
+
+  &__badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    top: 15px;
+    right: 16px;
+    padding: 11px 21px;
+    background-color: #f1462a;
+    border-radius: 12px;
+
+    @media (max-width: $tablet-max) {
+      top: 20px;
+      right: 20px;
+    }
+
+    @media (max-width: $mobile-max) {
+      top: 13px;
+      right: 14px;
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 18px;
+      color: #f3f3f3;
+    }
+  }
+
+  &__price-inner {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 24px 0 0;
+    }
+  }
+
+  &__price-old {
+    margin: 0 0 0 20px;
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #a8a8a8;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -7px;
+      width: calc(100% + 14px);
+      height: 1px;
+      transform: translateY(-50%);
+      background: #232323;
     }
   }
 
