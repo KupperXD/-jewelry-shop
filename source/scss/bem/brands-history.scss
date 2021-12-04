@@ -92,4 +92,34 @@
       }
     }
   }
+
+  &--boucheron {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 337px;
+        height: 80px;
+        margin: 0 140px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 252px;
+        height: 60px;
+      }
+    }
+  }
+
+  &--tiffany {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 365px;
+        height: 45px;
+        margin: 0 112px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 223px;
+        height: 28px;
+      }
+    }
+  }
 }

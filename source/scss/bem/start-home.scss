@@ -320,4 +320,12 @@
     }
   }
 
+  &--boucheron-brand {
+    .start-home__wrapper {
+      @media (min-width: $desktop-sm-min) {
+        padding-top: 80px;
+      }
+    }
+  }
+
 }
