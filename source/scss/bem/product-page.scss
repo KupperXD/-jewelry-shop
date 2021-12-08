@@ -420,4 +420,16 @@
     }
   }
 
+  &__how-choose-ring {
+    margin: 0 0 56px;
+
+    @media (max-width: $tablet-max) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__desc-columns {
+    margin-top: 24px;
+  }
+
 }
