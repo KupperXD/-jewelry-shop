@@ -110,4 +110,28 @@
       margin: 64px 0 0;
     }
   }
+
+  &__brands-history {
+    margin: 124px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 54px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 32px 0 0;
+    }
+  }
+
+  &__gallery {
+    margin: 112px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 72px 0 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 40px 0;
+    }
+  }
 }

@@ -78,6 +78,54 @@
     }
   }
 
+  &__static {
+    max-width: 950px;
+    margin: 54px auto 0;
+
+    @media (max-width: $tablet-max) {
+      max-width: 630px;
+      margin: 40px auto 0;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 24px auto 0;
+    }
+
+    img,
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    img {
+      margin: 54px 0 72px;
+
+      @media (max-width: $tablet-max) {
+        margin: 52px auto 32px;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 24px auto;
+      }
+    }
+
+    p {
+      margin: 16px 0;
+      font-size: 18px;
+      line-height: 21px;
+
+      @media (max-width: $tablet-max) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      @media (max-width: $mobile-max) {
+        text-align: center;
+      }
+    }
+  }
+
   &--cleef {
     .brands-history__logo {
       @media (min-width: $desktop-sm-min) {
@@ -119,6 +167,53 @@
       @media (max-width: $tablet-max) {
         width: 223px;
         height: 28px;
+      }
+    }
+  }
+
+
+
+  &--rolex {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 316px;
+        height: 179px;
+        margin: 0 132px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 198px;
+        height: 113px;
+      }
+    }
+  }
+
+  &--patek {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 301px;
+        height: 164px;
+        margin: 0 112px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 191px;
+        height: 104px;
+      }
+    }
+  }
+
+  &--piguet {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 333px;
+        height: 71px;
+        margin: 0 90px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 245px;
+        height: 53px;
       }
     }
   }

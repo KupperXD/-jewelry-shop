@@ -328,4 +328,16 @@
     }
   }
 
+  &--rolex,
+  &--patek,
+  &--piguet {
+    .start-home__title {
+      br {
+        @media (max-width: $tablet-max) {
+          display: none;
+        }
+      }
+    }
+  }
+
 }
