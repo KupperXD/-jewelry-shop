@@ -816,4 +816,957 @@
       }
     }
   }
+
+  &--richard {
+    .brands-gallery__list {
+      margin-top: -64px;
+    }
+    .brands-gallery__item {
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          width: 465px;
+          height: 465px;
+
+          @media (max-width: $tablet-max) {
+            width: 362px;
+            height: 362px;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 320px;
+            margin: 0 -16px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: -72px;
+
+        @media (max-width: $tablet-max) {
+          margin-top: 10px;
+        }
+
+        .brands-gallery__picture {
+          width: 471px;
+          height: 353px;
+
+          @media (max-width: $tablet-max) {
+            width: 367px;
+            height: 275px;
+            margin-left: -72px;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 320px;
+            margin: 0 -16px;
+          }
+        }
+      }
+    }
+  }
+
+  &--omega {
+    .brands-gallery__item {
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          width: 194px;
+          height: 359px;
+          @media (max-width: $tablet-max) {
+            width: 163px;
+            height: 299px;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 145px;
+            height: 267px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: 0;
+
+        @media (max-width: $tablet-max) {
+          margin-top: -24px;
+        }
+
+        .brands-gallery__picture {
+          width: 221px;
+          height: 339px;
+          @media (max-width: $tablet-max) {
+            width: 178px;
+            height: 272px;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 169px;
+            height: 258px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin: 0;
+
+        @media (max-width: $tablet-max) {
+          margin: 8px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 199px;
+          height: 337px;
+          @media (max-width: $tablet-max) {
+            width: 179px;
+            height: 304px;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 171px;
+            height: 289px;
+          }
+        }
+      }
+
+      &:not(:first-of-type) {
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+      }
+    }
+  }
+
+  &--breguet {
+    .brands-gallery__item {
+
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          width: 308px;
+          height: 385px;
+          @media (max-width: $tablet-max) {
+            width: 260px;
+            height: 325px;
+          }
+
+          @media (max-width: $mobile-max) {
+
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: -48px;
+
+        @media (max-width: $tablet-max) {
+          margin-top: -24px;
+        }
+
+        .brands-gallery__picture {
+          width: 411px;
+          height: 349px;
+          @media (max-width: $tablet-max) {
+            width: 320px;
+            height: 272px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin-top: 0;
+
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 471px;
+          height: 428px;
+          @media (max-width: $tablet-max) {
+            width: 351px;
+            height: 319px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+      }
+
+      &:not(:first-of-type) {
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+      }
+    }
+  }
+
+  &--arnold {
+    .brands-gallery__list {
+      margin: -64px 0 0;
+
+      @media (max-width: $tablet-max) {
+        margin: -24px 0 0;
+      }
+    }
+    .brands-gallery__item {
+
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          width: 319px;
+          height: 395px;
+          @media (max-width: $tablet-max) {
+            width: 320px;
+            height: 306px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin: -24px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: 32px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 228px;
+          height: 358px;
+          margin: 0 0 0 92px;
+          @media (max-width: $tablet-max) {
+            width: 183px;
+            height: 288px;
+            margin: 0 0 0 62px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin: 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -24px 0 0;
+        }
+        .brands-gallery__picture {
+          width: 224px;
+          height: 373px;
+          margin: 0 120px 0 0;
+          @media (max-width: $tablet-max) {
+            width: 185px;
+            height: 309px;
+            margin: 0 32px 0 0;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0;
+          }
+        }
+      }
+
+      &:not(:first-of-type) {
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+      }
+    }
+  }
+
+  &--chanel {
+    .brands-gallery__item {
+      position: static;
+
+      .brands-gallery__item-text {
+        position: relative;
+        z-index: 5;
+      }
+
+
+      &:nth-child(1) {
+        margin-top: -210px;
+        position: static;
+
+        @media (max-width: $tablet-max) {
+          margin-top: -150px;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin-top: -110px;
+        }
+
+        .brands-gallery__picture {
+          width: 451px;
+          height: 624px;
+          @media (max-width: $tablet-max) {
+            width: 320px;
+            height: 443px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          margin-top: -64px;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: -368px;
+        position: static;
+
+        @media (max-width: $tablet-max) {
+          margin-top: -300px;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin-top: -140px;
+        }
+
+        .brands-gallery__picture {
+          width: 403px;
+          height: 551px;
+          @media (max-width: $tablet-max) {
+            width: 320px;
+            height: 447px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+            transform: translateY(72px);
+
+          @media (max-width: $mobile-max) {
+            margin: 0;
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin: -96px 0 0;
+
+        @media (max-width: $mobile-max) {
+          margin: -12px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 345px;
+          height: 460px;
+          @media (max-width: $tablet-max) {
+            width: 275px;
+            height: 366px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          @media (max-width: $mobile-max) {
+            margin: 0;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        margin: -80px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -116px 0 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin: 52px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 364px;
+          height: 435px;
+          @media (max-width: $tablet-max) {
+            width: 283px;
+            height: 338px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          transform: translateY(52px);
+
+          @media (max-width: $mobile-max) {
+            margin: 52px 0 0;
+            transform: none;
+          }
+        }
+
+
+      }
+
+      &:nth-child(5) {
+        margin: -72px 0 0;
+
+        @media (max-width: $mobile-max) {
+          margin: -12px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 451px;
+          height: 373px;
+          @media (max-width: $tablet-max) {
+            width: 320px;
+            height: 265px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          @media (max-width: $tablet-max) {
+            transform: translateY(56px);
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 24px 0 0;
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(6) {
+        margin: -72px 0 0;
+        align-items: flex-end;
+
+        @media (max-width: $tablet-max) {
+          margin: 32px 0 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin: -12px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 491px;
+          height: 350px;
+          @media (max-width: $tablet-max) {
+            width: 303px;
+            height: 216px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          @media (max-width: $mobile-max) {
+            margin: 32px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &--hermes {
+    .brands-gallery__list {
+      margin: -64px 0 0;
+
+      @media (max-width: $tablet-max) {
+        margin: -40px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: -20px 0 0;
+      }
+    }
+    .brands-gallery__item {
+      position: static;
+
+      .brands-gallery__item-text {
+        position: relative;
+        z-index: 5;
+      }
+
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          width: 317px;
+          height: 317px;
+          @media (max-width: $tablet-max) {
+            width: 280px;
+            height: 280px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin: -112px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -90px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 318px;
+          height: 450px;
+          transform: translateX(64px);
+          @media (max-width: $tablet-max) {
+            width: 287px;
+            height: 382px;
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin-top: -176px;
+
+        @media (max-width: $tablet-max) {
+          margin: -162px 0 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin: 0;
+        }
+
+        .brands-gallery__picture {
+          width: 435px;
+          height: 435px;
+          @media (max-width: $tablet-max) {
+            width: 359px;
+            height: 359px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          transform: translateY(56px);
+
+          @media (max-width: $mobile-max) {
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        margin: 10px 0 0;
+
+        @media (max-width: $mobile-max) {
+          margin: 52px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 346px;
+          height: 260px;
+          transform: translateX(68px);
+          @media (max-width: $tablet-max) {
+            width: 289px;
+            height: 217px;
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        margin-top: -96px;
+
+        @media (max-width: $tablet-max) {
+          margin: -72px 0 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin: 12px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 390px;
+          height: 390px;
+          @media (max-width: $tablet-max) {
+            width: 328px;
+            height: 328px;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          transform: translateY(56px);
+
+          @media (max-width: $mobile-max) {
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+
+  &--dior {
+    .brands-gallery__list {
+      margin-top: -32px;
+
+      @media (max-width: $mobile-max) {
+        margin: 24px 0 0;
+      }
+    }
+    .brands-gallery__item {
+      position: static;
+
+      .brands-gallery__item-text {
+        position: relative;
+        z-index: 5;
+      }
+
+      &:nth-child(1) {
+        .brands-gallery__picture {
+          width: 288px;
+          height: 324px;
+          transform: translateX(-90px);
+          @media (max-width: $tablet-max) {
+            width: 251px;
+            height: 285px;
+            transform: none;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 288px;
+            height: 327px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin: -20px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin-top: 52px;
+        }
+
+        .brands-gallery__picture {
+          width: 288px;
+          height: 361px;
+          transform: translateX(68px);
+          @media (max-width: $tablet-max) {
+            width: 251px;
+            height: 315px;
+            transform: translateX(30px);
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 288px;
+            height: 361px;
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin: -140px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -40px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 320px;
+          height: 363px;
+          transform: translateX(-72px);
+          @media (max-width: $tablet-max) {
+            width: 318px;
+            height: 361px;
+            transform: none;
+          }
+
+          @media (max-width: $mobile-max) {
+            width: 320px;
+            height: 363px;
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          transform: translateY(60px);
+
+          @media (max-width: $tablet-max) {
+            transform: translateY(40px);
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: -24px 0 0;
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        margin: -72px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -40px 0 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin: 32px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 290px;
+          height: 290px;
+          transform: translateX(72px);
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        margin: -32px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -12px 0 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin: 48px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 248px;
+          height: 248px;
+          transform: translateX(-58px);
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(6) {
+        margin: -72px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: 0;
+        }
+
+        .brands-gallery__picture {
+          width: 281px;
+          height: 281px;
+          transform: translateX(56px);
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+        }
+
+        .brands-gallery__item-text {
+          transform: translateY(48px);
+
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(7) {
+        margin: -72px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -40px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 312px;
+          height: 314px;
+          transform: translateX(-90px);
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+
+        .brands-gallery__item-text {
+          @media (max-width: $mobile-max) {
+            margin: -24px 0 0;
+          }
+        }
+      }
+
+      &:nth-child(8) {
+        margin: -40px 0 0;
+
+        @media (max-width: $mobile-max) {
+          margin: 0;
+        }
+
+        .brands-gallery__picture {
+          width: 241px;
+          height: 241px;
+          transform: translateX(92px);
+          @media (max-width: $tablet-max) {
+            transform: translateX(32px);
+          }
+
+          @media (max-width: $mobile-max) {
+            transform: none;
+          }
+        }
+      }
+
+      &:nth-child(9) {
+        margin: 0;
+
+        @media (max-width: $mobile-max) {
+          margin: 24px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 291px;
+          height: 327px;
+          transform: translateX(-82px);
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+        }
+
+        .brands-gallery__item-text {
+          @media (max-width: $mobile-max) {
+            margin: -12px 0 0;
+          }
+        }
+      }
+
+      &:nth-child(10) {
+        margin: -12px 0 0;
+
+        @media (max-width: $mobile-max) {
+          margin: 24px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 320px;
+          height: 232px;
+          transform: translateX(52px);
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+      }
+
+      &:nth-child(11) {
+        margin: -40px 0 0;
+
+        @media (max-width: $tablet-max) {
+          margin: -20px 0 0;
+        }
+
+        @media (max-width: $mobile-max) {
+          margin: 12px 0 0;
+        }
+
+        .brands-gallery__picture {
+          width: 309px;
+          height: 309px;
+          transform: translateX(-82px);
+          @media (max-width: $tablet-max) {
+            transform: none;
+          }
+
+          @media (max-width: $mobile-max) {
+            margin: 0 -16px;
+          }
+        }
+      }
+    }
+  }
+
+  &--louis {
+    .brands-gallery__item {
+      margin: 0;
+      .brands-gallery__picture {
+          width: auto;
+          height: auto;
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: auto;
+            height: auto;
+          }
+      }
+
+      &:nth-child(1) {
+        .brands-gallery__picture {
+
+
+          @media (max-width: $tablet-max) {
+
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .brands-gallery__picture {
+
+
+          @media (max-width: $tablet-max) {
+
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .brands-gallery__picture {
+
+
+          @media (max-width: $tablet-max) {
+
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .brands-gallery__picture {
+
+
+          @media (max-width: $tablet-max) {
+
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        .brands-gallery__picture {
+
+
+          @media (max-width: $tablet-max) {
+
+          }
+        }
+      }
+    }
+  }
 }

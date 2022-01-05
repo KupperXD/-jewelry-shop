@@ -257,7 +257,10 @@
     }
   }
 
-  &--vancleef-brand {
+  &--vancleef-brand,
+  &--richard,
+  &--hermes,
+  &--louis{
     @media (min-width: $desktop-sm-min) {
       color: $main-text-color;
     }
@@ -330,13 +333,27 @@
 
   &--rolex,
   &--patek,
-  &--piguet {
+  &--piguet,
+  &--richard,
+  &--omega,
+  &--breguet,
+  &--hermes,
+  &--dior,
+  &--louis {
     .start-home__title {
       br {
         @media (max-width: $tablet-max) {
           display: none;
         }
       }
+    }
+  }
+
+  &--richard {
+    color: $black;
+
+    @media (max-width: $tablet-max) {
+      color: $white;
     }
   }
 

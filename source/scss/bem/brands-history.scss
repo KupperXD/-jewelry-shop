@@ -1,5 +1,6 @@
 .brands-history {
-
+  position: relative;
+  z-index: 10;
 
   &__wrapper {
     display: flex;
@@ -214,6 +215,126 @@
       @media (max-width: $tablet-max) {
         width: 245px;
         height: 53px;
+      }
+    }
+  }
+
+  &--richard {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 388px;
+        height: 29px;
+        margin: 0 72px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 256px;
+        height: 20px;
+      }
+    }
+  }
+
+  &--omega {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 291px;
+        height: 142px;
+        margin: 0 120px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 184px;
+        height: 90px;
+      }
+    }
+  }
+
+  &--breguet {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 300px;
+        height: 188px;
+        margin: 0 120px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 201px;
+        height: 127px;
+      }
+    }
+  }
+
+  &--arnold {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 314px;
+        height: 150px;
+        margin: 0 120px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 238px;
+        height: 114px;
+      }
+    }
+  }
+
+  &--chanel {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 221px;
+        height: 146px;
+        margin: 0 160px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 162px;
+        height: 107px;
+      }
+    }
+  }
+
+  &--hermes {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 250px;
+        height: 144px;
+        margin: 0 160px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 217px;
+        height: 125px;
+      }
+    }
+  }
+
+  &--dior {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 217px;
+        height: 87px;
+        margin: 0 168px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 172px;
+        height: 69px;
+      }
+    }
+  }
+
+  &--louis {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 120px;
+        height: 145px;
+        margin: 0 224px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 120px;
+        height: 145px;
       }
     }
   }
