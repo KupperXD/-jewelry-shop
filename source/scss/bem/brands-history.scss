@@ -338,4 +338,25 @@
       }
     }
   }
+
+  &--de-grisogono {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 364px;
+        height: 208px;
+        margin: 0 96px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 268px;
+        height: 153px;
+      }
+    }
+
+    .brands-history__content {
+      @media (max-width: $mobile-max) {
+        margin-top: 8px;
+      }
+    }
+  }
 }

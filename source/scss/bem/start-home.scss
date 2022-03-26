@@ -260,7 +260,7 @@
   &--vancleef-brand,
   &--richard,
   &--hermes,
-  &--louis{
+  &--louis {
     @media (min-width: $desktop-sm-min) {
       color: $main-text-color;
     }
@@ -357,4 +357,12 @@
     }
   }
 
+  &--de-grisogono {
+    .start-home__inner {
+      @media (min-width: $desktop-sm-min) {
+        max-width: 674px;
+        transform: translateX(48px);
+      }
+    }
+  }
 }
