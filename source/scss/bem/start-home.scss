@@ -339,7 +339,9 @@
   &--breguet,
   &--hermes,
   &--dior,
-  &--louis {
+  &--louis,
+  &--piaget,
+  &--messika {
     .start-home__title {
       br {
         @media (max-width: $tablet-max) {
@@ -357,10 +359,12 @@
     }
   }
 
-  &--de-grisogono {
+  &--de-grisogono,
+  &--harry-winston,
+  &--pasquale {
     .start-home__inner {
       @media (min-width: $desktop-sm-min) {
-        max-width: 674px;
+        max-width: 700px;
         transform: translateX(48px);
       }
     }

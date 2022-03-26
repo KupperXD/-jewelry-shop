@@ -359,4 +359,174 @@
       }
     }
   }
+
+  &--harry-winston {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 374px;
+        height: 137px;
+        margin: 0 82px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 239px;
+        height: 87px;
+        margin: 0 42px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 0;
+      }
+    }
+
+    .brands-history__content {
+      @media (max-width: $mobile-max) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &--piaget {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 238px;
+        height: 93px;
+        margin: 0 140px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 203px;
+        height: 80px;
+        margin: 0 60px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 0;
+      }
+    }
+
+    .brands-history__content {
+      @media (max-width: $mobile-max) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &--messika {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 370px;
+        height: 102px;
+        margin: 0 92px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 226px;
+        height: 62px;
+        margin: 0 48px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 0;
+      }
+    }
+
+    .brands-history__content {
+      @media (max-width: $mobile-max) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &--damiani {
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 354px;
+        height: 120px;
+        margin: 0 100px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 225px;
+        height: 76px;
+        margin: 0 48px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 0;
+      }
+    }
+
+    .brands-history__content {
+      @media (max-width: $mobile-max) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &--pasquale {
+    .brands-history__wrapper {
+      justify-content: flex-start;
+
+      @media (max-width: $tablet-max) {
+        justify-content: center;
+      }
+    }
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 512px;
+        height: 45px;
+        margin: 0 88px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 281px;
+        height: 24px;
+        margin: 0 32px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 0;
+      }
+    }
+
+    .brands-history__content {
+      @media (max-width: $mobile-max) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &--roberto-coin {
+    .brands-history__wrapper {
+      justify-content: flex-start;
+
+      @media (max-width: $tablet-max) {
+        justify-content: center;
+      }
+    }
+    .brands-history__logo {
+      @media (min-width: $desktop-sm-min) {
+        width: 549px;
+        height: 150px;
+        margin: 0 60px 0 0;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 304px;
+        height: 83px;
+        margin: 0 12px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 0;
+      }
+    }
+
+    .brands-history__content {
+      @media (max-width: $mobile-max) {
+        margin-top: 32px;
+      }
+    }
+  }
 }
