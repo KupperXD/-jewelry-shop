@@ -1,0 +1,11 @@
+.static-content {
+   p {
+     &:not(:first-child) {
+       margin: 12px 0 0;
+
+       @media (max-width: $mobile-max) {
+         margin: 8px 0 0;
+       }
+     }
+   }
+}

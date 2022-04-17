@@ -470,6 +470,76 @@
             });
         };
 
+        const initBlogPageManager = ($holder)=> {
+            const $gallery = $holder.find('.js-blog-detail-gallery');
+            const $interestedHolder = $holder.find('.js-blog-detail-interested-swiper');
+            let resizeTimeoutId = null;
+            let swipeGallery = null;
+            let swiperInterested = null;
+
+            const initGallery = () => {
+                const isMobile = window.innerWidth < 768;
+
+                if (swipeGallery) {
+                    swipeGallery.destroy();
+                    swipeGallery = null;
+                }
+
+                if (!isMobile) {
+                  return;
+                }
+
+
+              swipeGallery = new Swiper($gallery.get(0), {
+                  previewSlide: 1,
+                  spaceBetween: 16,
+                  pagination: {
+                      el: '.swiper-pagination',
+                      type: 'bullets',
+                      clickable: true
+                  },
+              })
+            };
+
+            const initInterested = () => {
+                const isMobile = window.innerWidth < 768;
+
+                if (swiperInterested) {
+                    swiperInterested.destroy();
+                    swiperInterested = null;
+                }
+
+                if (!isMobile) {
+                    return;
+                }
+
+                swiperInterested = new Swiper($interestedHolder.get(0), {
+                    previewSlide: 1,
+                    spaceBetween: 16,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                        clickable: true
+                    },
+                })
+            };
+
+            initGallery();
+            initInterested();
+
+            $(window).on('resize', () => {
+                console.log('resize');
+                if (resizeTimeoutId) {
+                    clearTimeout(resizeTimeoutId);
+                }
+
+                resizeTimeoutId = setTimeout(() => {
+                    initGallery();
+                    initInterested();
+                }, 100)
+            });
+        };
+
         const init = () => {
             burgerButtonPlugin();
             burgerSectionPlugin();
@@ -491,6 +561,10 @@
 
             $('.js-slider-with-thumb-holder').each((index, item) => {
                initProductPageSliders($(item));
+            });
+
+            $('.js-blog-detail-page').each((index, item) => {
+               initBlogPageManager($(item));
             });
         }
 

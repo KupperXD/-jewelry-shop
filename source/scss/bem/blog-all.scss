@@ -1,0 +1,104 @@
+.blog-all {
+  padding: 110px 0 56px;
+  overflow: hidden;
+
+  @media (max-width: $tablet-max) {
+    padding-bottom: 50px;
+  }
+
+  &__main {
+    margin: 16px 0 0;
+  }
+
+  .blog-all__title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (max-width: $tablet-max) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: -20px -5px;
+
+    @media (max-width: $tablet-max) {
+      margin: -16px -5px;
+    }
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      margin: 0;
+    }
+
+    &-wrapper {
+      margin: 32px 0 0;
+
+      @media (max-width: $tablet-max) {
+        margin: 24px 0 0;
+      }
+    }
+  }
+
+  &__list-item {
+    margin: 20px 5px;
+
+    @media (max-width: $tablet-max) {
+      margin: 16px 5px;
+    }
+
+    @media (max-width: $mobile-max) {
+      width: 288px;
+      margin: 0 auto;
+    }
+
+    &:not(:first-of-type) {
+      @media (max-width: $mobile-max) {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 32px 0 0;
+    }
+  }
+
+  &__show-counts {
+    font-size: 18px;
+    line-height: 26px;
+
+    @media (max-width: $tablet-max) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__show-more {
+    margin: 16px 0 0;
+
+    @media (max-width: $mobile-max) {
+      margin: 12px 0 0;
+    }
+  }
+
+  &__maps {
+    margin: 140px 0 0;
+
+    @media (max-width: $tablet-max) {
+      margin: 100px 0 0;
+    }
+  }
+}

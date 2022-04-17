@@ -40,6 +40,10 @@
     --header-text-color: #3c3c3c;
   }
 
+  &--green {
+    background-color: $green;
+  }
+
   &.open-burger-menu {
     .header__burger-wrapper {
       display: block;
