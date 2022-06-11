@@ -89,5 +89,9 @@
     @media (max-width: $mobile-max) {
       margin: 40px 0 0;
     }
+
+    & ~ & {
+      margin-top: 16px;
+    }
   }
 }

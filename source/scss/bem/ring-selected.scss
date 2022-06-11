@@ -106,4 +106,34 @@
     }
   }
 
+  &--bug-auth {
+    color: #3c3c3c;
+
+    .ring-selected__wrapper {
+      display: flex;
+      align-items: center;
+      background-color: rgb(208, 208, 205);
+      box-shadow: 0 6px 16px 0 rgba(228, 228, 228, 0.75);
+      overflow: hidden;
+
+      @media (max-width: $mobile-max) {
+        display: block;
+        min-height: 445px;
+      }
+    }
+
+    .ring-selected__bg {
+      top: -10px;
+      right: -18px;
+      height: 109%;
+
+      @media (max-width: $mobile-max) {
+        height: 105%;
+        top: auto;
+        bottom: -24px;
+        right: 0;
+      }
+    }
+  }
+
 }

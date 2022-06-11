@@ -134,4 +134,28 @@
       margin: 40px 0;
     }
   }
+
+  &__sales {
+    margin: 0 0 68px;
+
+    @media (max-width: $tablet-max) {
+      margin: 0 0 52px;
+    }
+
+    @media (max-width: $mobile-max) {
+      margin: 0 0 40px;
+    }
+  }
+
+  &__services {
+      margin: 112px 0 0;
+
+      @media (max-width: $tablet-max) {
+        margin: 92px 0 0;
+      }
+
+      @media (max-width: $mobile-max) {
+        margin: 64px 0 0;
+      }
+  }
 }

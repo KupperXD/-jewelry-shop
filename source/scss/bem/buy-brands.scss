@@ -197,4 +197,33 @@
       }
     }
   }
+
+  &--bugs {
+    .buy-brands__list {
+      justify-content: center;
+
+      @media (max-width: 767px) {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+    }
+
+    .buy-brands__item {
+      @media (max-width: 767px) {
+        width: calc((100% / 2) - 32px);
+        margin: 16px 8px;
+      }
+    }
+
+    .buy-brands__link,
+    .buy-brands__link img {
+      max-height: none;
+    }
+
+    .buy-brands__link img {
+      @media (max-width: 767px) {
+        max-height: 80px;
+      }
+    }
+  }
 }
