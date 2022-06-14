@@ -135,6 +135,10 @@
             letter-spacing: 1px;
         }
 
+        .services__main-title {
+            color: #3C3C3C;
+        }
+
         .services__item {
             @media (max-width: $tablet-max) {
                 padding-top: 40px;
